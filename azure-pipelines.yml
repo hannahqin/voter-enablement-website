@@ -7,33 +7,57 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
+# Set variables
+variables:
+  directory: client
+  stage: development
+  serviceConnection: dukevotes
+  appServiceName: dukevotes
+ 
 steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
-- script: |
-      pushd $client
-      npm install
-      npm run build
-      popd
-  displayName: "Build UI"
-
+ 
+- script: 
+    npm install
+  displayName: 'npm install'
+  workingDirectory: $(directory)
+ 
+- script: 
+    set "REACT_APP_STAGE=$(stage)" && npm run build
+  displayName: 'npm build'
+  workingDirectory: $(directory)
+ 
+- task: CopyFiles@2
+  displayName: 'Copy files'
+  inputs:
+    sourceFolder: '$(directory)/build' 
+    Contents: '**/*'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    cleanTargetFolder: true
+ 
 - task: ArchiveFiles@2
-  displayName: Archive
+  displayName: 'Archive files'
   inputs:
-    rootFolderOrFile: "$client"
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
     includeRootFolder: false
-    archiveType: "zip"
-    archiveFile: "$(Build.ArtifactStagingDirectory)/ui-$(Build.BuildId).zip"
+    archiveType: zip
+    archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
     replaceExistingArchive: true
-
+ 
 - task: PublishBuildArtifacts@1
-  displayName: Publish Artifacts
+  displayName: 'Publish Build Artifacts'
+  inputs: 
+    pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+ 
+- task: AzureWebApp@1
+  displayName: 'Deploy to App Service'
   inputs:
-    PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-    ArtifactName: "drop"
-    publishLocation: "Container"
+    azureSubscription: '$(serviceConnection)'
+    appName: '$(appServiceName)'
+    appType: 'webApp'
+    package: '$(System.ArtifactsDirectory)/$(Build.BuildId).zip'
