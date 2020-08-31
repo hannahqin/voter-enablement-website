@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const callBackendAPI = async () => {
-  const response = await fetch('/api');
+  const response = await fetch('/api/connected');
   const body = await response.json();
 
   if (response.status !== 200) {
