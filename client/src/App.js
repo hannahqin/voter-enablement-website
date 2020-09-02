@@ -13,7 +13,7 @@ const callBackendAPI = async () => {
 };
 
 function App() {
-  const [apiTest, setAPITest] = useState('TEST');
+  const [apiTest, setAPITest] = useState({data: 'TEST'});
   useEffect(() => {
     callBackendAPI()
       .then(res => setAPITest({ data: res.express }))
