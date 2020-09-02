@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 # Set variables
 variables:
@@ -46,6 +46,14 @@ steps:
     Contents: '**/*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     cleanTargetFolder: true
+
+- task: CopyFiles@2
+  displayName: 'Copy server files'
+  inputs:
+    sourceFolder: '$(serverDirectory)' 
+    Contents: '**/*'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    cleanTargetFolder: false
  
 - task: ArchiveFiles@2
   displayName: 'Archive files'
