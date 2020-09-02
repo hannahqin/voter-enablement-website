@@ -22,16 +22,20 @@ app.use(helmet());
 app.use(logger('dev'));
 
 // Add your API routes under the route `/api`
-const api = require('./api');
-app.use('/api', api);
+// const api = require('./api');
+// app.use('/api', api);
+// create a GET route
+app.get('/api/connected', (req, res) => {
+  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+});
 
 // Serve the React application
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-const port = normalizePort(process.env.PORT || 3000);
+const port = normalizePort(process.env.PORT || 5000);
 app.listen(port, () => {
   console.log(`API listening on port: ${port}`);
 });

@@ -18,8 +18,8 @@ function App() {
     callBackendAPI()
       .then(res => setAPITest({ data: res.express }))
       .catch(err => console.log(err));
-  });
-  
+  }, []);
+   
   return (
     <div className="App">
       <header className="App-header">
@@ -36,7 +36,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <div><h1>{apiTest.data}</h1></div>
+      <div><h1>TEST: {apiTest.data}</h1></div>
     </div>
   );
 }
