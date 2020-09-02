@@ -15,6 +15,7 @@ variables:
   stage: development
   serviceConnection: dukevotes
   appServiceName: dukevotes
+  INLINE_RUNTIME_CHUNK: false
  
 steps:
 - task: NodeTool@0
