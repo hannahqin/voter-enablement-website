@@ -1,6 +1,6 @@
 import React from "react";
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 import dukeLogo from "./dukeLogoWhite.png";
@@ -23,13 +23,11 @@ function Header() {
     const classes=useStyles();
   return (
     <React.Fragment>
-        <Grid container spacing={8}>
-            <Grid item >
-                <img src={dukeLogo} height='50vh' />
-            </Grid>
-            <Grid item xs={0} >
-                <Typography variant="h3" className={classes.root}>Duke Votes</Typography>
-            </Grid>
+        <Grid item >
+            <img src={dukeLogo} height='50vh' />
+        </Grid>
+        <Grid item xs={0} >
+            <Typography variant="h3" className={classes.root}>Duke Votes</Typography>
         </Grid>
     </React.Fragment>
   );

@@ -1,9 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './components/Header';
 import MainText from './components/MainText';
+import Countdown from './components/Countdown';
+import ActionButtons from './components/ActionButtons';
+import Map from './components/Map';
+import StateSelection from './components/StateSelection';
+import Commercial from './components/Commercial';
+import SocialMedia from './components/SocialMedia';
+
 import './App.css';
 
 const useStyles = makeStyles({
@@ -37,9 +45,31 @@ function App() {
    
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="false" style={{color: 'white', backgroundColor: 'black', height: '100vh', padding: '16px'}} >
-        <Header />
-        <MainText />
+      <Container maxWidth="false" style={{color: 'white', backgroundColor: 'black', height: '100vh', padding: '8em'}} >
+        <Grid container spacing="8" style={{height: '10vh'}}>
+          <Header />
+        </Grid>
+        <Grid container spacing="8" style={{height: '80vh', marginTop: '15em'}}>
+          <MainText />
+        </Grid>
+        <Grid container>
+          <Countdown />
+        </Grid>
+        <Grid container>
+          <ActionButtons />
+        </Grid>
+        <Grid container>
+          <Map />
+        </Grid>
+        <Grid container>
+          <StateSelection />
+        </Grid>
+        <Grid container>
+          <Commercial />
+        </Grid>
+        <Grid container>
+          <SocialMedia />
+        </Grid>
       </Container>
     </ThemeProvider>
   );
