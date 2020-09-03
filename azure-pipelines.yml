@@ -38,4 +38,4 @@ steps:
     appName: '$(appServiceName)'
     appType: 'webApp'
     package: '$(System.DefaultWorkingDirectory)'
-    customWebConfig: '-Handler iisnode --NodeStartFile app.js --appType node'
+    customWebConfig: '-Handler iisnode -NodeStartFile app.js -appType node'
