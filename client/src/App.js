@@ -96,7 +96,7 @@ function App() {
         <Grid container>
           <Header />
         </Grid>
-        <Grid container />
+        <Grid container >
           { useMediaQuery('(min-width:600px)') ? (
             <MainText />
            ) :  (<SmallMainText /> ) }
