@@ -1,15 +1,11 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 import dukeLogo from "./dukeLogoWhite.png";
 
-// xs, extra-small: 0px
-// sm, small: 600px
-// md, medium: 960px
-// lg, large: 1280px
-// xl, extra-large: 1920px
+import '../App.css';
 
 const useStyles = makeStyles({
     root: {
@@ -17,15 +13,16 @@ const useStyles = makeStyles({
     },
   });
 
+
 function Header() {
     const classes=useStyles();
   return (
     <React.Fragment>
         <Grid item >
-            <img src={dukeLogo} height='50vh' />
+            <img src={dukeLogo} id="dukeLogo" />
         </Grid>
-        <Grid item xs={0} >
-            <Typography variant="h3" className={classes.root}>Duke Votes</Typography>
+        <Grid item>
+            <Typography variant="h3" className={classes.root} id="dukeLogoText">Duke Votes</Typography>
         </Grid>
     </React.Fragment>
   );
