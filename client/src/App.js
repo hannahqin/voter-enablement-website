@@ -1,6 +1,20 @@
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
+import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
+import Header from './components/Header';
+import MainText from './components/MainText';
 import './App.css';
+
+const useStyles = makeStyles({
+  root: {
+    fontFamily: 'Libre Franklin !important'
+  },
+});
+
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const callBackendAPI = async () => {
   const response = await fetch('/api/connected');
@@ -13,6 +27,7 @@ const callBackendAPI = async () => {
 };
 
 function App() {
+  const classes=useStyles();
   const [apiTest, setAPITest] = useState({data: 'TEST'});
   useEffect(() => {
     callBackendAPI()
@@ -21,23 +36,12 @@ function App() {
   }, []);
    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div><h1>TEST: {apiTest.data}</h1></div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="false" style={{color: 'white', backgroundColor: 'black', height: '100vh', padding: '16px'}} >
+        <Header />
+        <MainText />
+      </Container>
+    </ThemeProvider>
   );
 }
 
