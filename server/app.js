@@ -30,9 +30,14 @@ app.get('/api/connected', (req, res) => {
 });
 
 // Serve the React application
-app.use(express.static('D:/home/site/wwwroot/static'));
+// app.use(express.static('D:/home/site/wwwroot/static'));
+// app.get('/', (req, res) => {
+//   res.sendFile('D:/home/site/wwwroot/index.html');
+// });
+
+app.use(express.static(path.join(__dirname, 'static')));
 app.get('/', (req, res) => {
-  res.sendFile('D:/home/site/wwwroot/index.html');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const port = normalizePort(process.env.PORT || 5000);
