@@ -16,7 +16,8 @@ import './App.css';
 
 const useStyles = makeStyles({
   root: {
-    fontFamily: 'Libre Franklin !important'
+    fontFamily: 'Libre Franklin !important',
+    fontWeight: '100 !important'
   },
 });
 
