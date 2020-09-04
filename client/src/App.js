@@ -101,7 +101,7 @@ function App() {
             <MainText />
            ) :  (<SmallMainText /> ) }
         </Grid>
-        <Grid container style={{marginTop: "15vh"}}>
+        <Grid container style={{marginTop: "18vh"}}>
           <VoteForText />
         </Grid>
         <Grid container>
