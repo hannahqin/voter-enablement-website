@@ -26,13 +26,11 @@ function SocialMedia() {
               <FacebookIcon className="sm-icon" />
             </IconButton>
         </Grid>
-        <Grid container xs={12} md={12} lg={12}
-          justify="center"
-          alignItems="center">
-            <Grid item>
-              <Typography>Your voice matters. Your vote matters.</Typography>
-              <Typography><strong>You can make the difference.</strong></Typography>
-            </Grid>
+        <Grid item xs={12} md={12} lg={12}>
+          <Typography variant="body1" style={{fontSize:"0.5em", textAlign:"center"}}>Your voice matters. Your vote matters.</Typography>
+        </Grid>
+        <Grid item xs={12} md={12} lg={12}>
+          <Typography variant="body1" style={{fontSize:"0.5em", textAlign:"center"}}><strong>You can make the difference.</strong></Typography>
         </Grid>
     </React.Fragment>
   );

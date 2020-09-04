@@ -111,13 +111,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: 'black', height: '100vh'}} >
-        <Grid container>
+        <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
         <Grid container style={{marginTop: "20vh"}}>
-          { useMediaQuery('(min-width:600px)') ? (
+          <MainText />
+          {/* { useMediaQuery('(min-width:600px)') ? (
             <MainText />
-           ) :  (<SmallMainText /> ) }
+           ) :  (<SmallMainText /> ) } */}
         </Grid>
         <Grid container style={{marginTop: "15vh"}}>
           <VoteForText />

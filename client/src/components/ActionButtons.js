@@ -14,7 +14,7 @@ import '../App.css';
 const useStyles = makeStyles({
   root: {
     fontFamily: 'Libre Franklin !important',
-    fontWeight: '100 !important'
+    fontWeight: '100 !important',
   },
   appBar: {
     position: 'relative',
@@ -47,13 +47,13 @@ function ActionButtons() {
 
   return (
     <React.Fragment>
-        <Grid item   className="button-container" 
+        <Grid item   xs={5} md={5} lg={5} className="button-container" 
           onClick={() => {
             setShowModal(true);
             setActionType('reg');
           }} 
         >
-            <Typography className="action-buttons">Register to Vote</Typography>
+            <Typography variant="h6" className={classes.root}>Register to Vote</Typography>
         </Grid>
         <Grid item xs={1} md={1} lg={1}></Grid>
         <Grid item  xs={5} md={5} lg={5} className="button-container" 
@@ -62,7 +62,7 @@ function ActionButtons() {
             setActionType('ab');
           }} 
         >
-            <Typography className="action-buttons">Request Absentee Ballot</Typography>
+            <Typography variant="h6" className={classes.root}>Request Absentee Ballot</Typography>
           </Grid>
           <Grid item  xs={5} md={5} lg={5} className="button-container" style={{marginTop: '15vh'}}
             onClick={() => {
@@ -70,7 +70,7 @@ function ActionButtons() {
               setActionType('cr');
             }} 
           >
-            <Typography className="action-buttons">Check Registration Status</Typography>
+            <Typography variant="h6" className={classes.root}>Check Registration Status</Typography>
           </Grid>
           <Grid item xs={1} md={1} lg={1}></Grid>
           { showModal ? ( 
