@@ -1,15 +1,38 @@
 import React from "react";
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
 import '../App.css';
 
 function SocialMedia() {
   return (
     <React.Fragment>
         <Grid item>
-            <Typography variant="h1">SocialMedia</Typography>
+          <IconButton>
+              <InstagramIcon className="sm-icon" />
+          </IconButton>
+        </Grid>
+        <Grid item>
+          <IconButton>
+            <TwitterIcon className="sm-icon" />
+          </IconButton>
+        </Grid>
+        <Grid item>
+            <IconButton>
+              <FacebookIcon className="sm-icon" />
+            </IconButton>
+        </Grid>
+        <Grid container xs={12} md={12} lg={12}
+          justify="center"
+          alignItems="center">
+            <Grid item>
+              <Typography>Your voice matters. Your vote matters.</Typography>
+              <Typography><strong>You can make the difference.</strong></Typography>
+            </Grid>
         </Grid>
     </React.Fragment>
   );

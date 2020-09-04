@@ -52,6 +52,24 @@ theme.typography.h3 = {
   },
 };
 
+theme.typography.h4 = {
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.8rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.up('xl')]: {
+    fontSize: '3rem',
+  },
+};
+
 theme.typography.h6 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1rem',
@@ -96,30 +114,31 @@ function App() {
         <Grid container>
           <Header />
         </Grid>
-        <Grid container >
+        <Grid container style={{marginTop: "20vh"}}>
           { useMediaQuery('(min-width:600px)') ? (
             <MainText />
            ) :  (<SmallMainText /> ) }
         </Grid>
-        <Grid container style={{marginTop: "18vh"}}>
+        <Grid container style={{marginTop: "15vh"}}>
           <VoteForText />
         </Grid>
-        <Grid container>
+        <Grid container style={{marginTop: "15vh"}}>
           <Countdown />
         </Grid>
-        <Grid container>
+        <Grid container style={{marginTop: "15vh"}}>
           <ActionButtons />
         </Grid>
-        <Grid container>
+        <Grid container style={{marginTop: "15vh"}} >
           <Map />
-        </Grid>
-        <Grid container>
           <StateSelection />
         </Grid>
-        <Grid container>
+        <Grid container style={{marginTop: "15vh"}}>
           <Commercial />
         </Grid>
-        <Grid container>
+        <Grid container style={{marginTop: "15vh"}} 
+          direction="row"
+          justify="center"
+          alignItems="center">
           <SocialMedia />
         </Grid>
       </Container>
