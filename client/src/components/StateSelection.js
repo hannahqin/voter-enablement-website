@@ -8,7 +8,7 @@ import '../App.css';
 function StateSelection() {
   return (
     <React.Fragment>
-        <Grid item>
+        <Grid item xs={6} md={6} lg={6}>
             <Typography variant="h1">StateSelection</Typography>
         </Grid>
     </React.Fragment>

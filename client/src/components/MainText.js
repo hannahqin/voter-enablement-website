@@ -17,7 +17,7 @@ export function MainText() {
 
   return (
     <React.Fragment>
-        <Grid item xs={12} md={12} lg={12} className="text-container">
+        <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h3" className={classes.root}><strong>WE VOTE FOR CHANGE </strong> <small>vs. </small>STATUS QUO /</Typography>
             <Typography variant="h3" className={classes.root}><strong>HOPE </strong><small>vs.</small> FEAR / <strong>ACTION </strong> <small>vs. </small> TALK / <strong>LOVE </strong> <small>vs. </small>HATE /</Typography>
             <Typography variant="h3" className={classes.root}><strong>OPTIMISM </strong><small>vs. </small>PESSIMISM / <strong>UNITY</strong> <small>vs. </small> DIVISION /</Typography>
