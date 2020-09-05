@@ -68,11 +68,12 @@ steps:
   displayName: 'Publish Build Artifacts'
   inputs: 
     pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
- 
-- task: AzureWebApp@1
-  displayName: 'Deploy to App Service'
+
+- task: AzureRmWebAppDeployment@4
   inputs:
-    azureSubscription: '$(serviceConnection)'
-    appName: '$(appServiceName)'
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'thebrotherhoodvotes'
     appType: 'webAppLinux'
-    package: '$(System.ArtifactsDirectory)/$(Build.BuildId).zip'
+    WebAppName: 'thebrotherhoodvotes'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'NODE|10-lts'
