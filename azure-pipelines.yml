@@ -19,6 +19,9 @@ variables:
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+  
+  # set react build stage
+  stage: 'production'
 
 stages:
 - stage: Build
