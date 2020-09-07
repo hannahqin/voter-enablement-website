@@ -26,7 +26,7 @@ app.use(logger('dev'));
 // app.use('/api', api);
 // create a GET route
 app.get('/api/connected', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT TEST' });
 });
 
 // Serve the React application
