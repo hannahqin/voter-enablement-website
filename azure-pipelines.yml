@@ -14,8 +14,8 @@ variables:
   clientDirectory: client
   serverDirectory: server
   stage: production
-  serviceConnection: dukevotes
-  appServiceName: dukevotes
+  serviceConnection: thebrotherhoodvotes
+  appServiceName: thebrotherhoodvotes
   INLINE_RUNTIME_CHUNK: false
  
 steps:
