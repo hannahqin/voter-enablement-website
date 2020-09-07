@@ -21,6 +21,7 @@ variables:
   vmImageName: 'ubuntu-latest'
   
   # set react build stage
+  clientDirectory: 'client'
   stage: 'production'
 
 stages:
@@ -46,7 +47,7 @@ stages:
     - script:
         npm install
       displayName: 'npm install server'
-      workingDirectory: $(serverDirectory)
+      workingDirectory: '$(System.DefaultWorkingDirectory)'
     
     - script: 
         set "REACT_APP_STAGE=$(stage)" && npm run build
@@ -64,7 +65,7 @@ stages:
     - task: CopyFiles@2
       displayName: 'Copy server files'
       inputs:
-        sourceFolder: '$(serverDirectory)' 
+        sourceFolder: '$(System.DefaultWorkingDirectory)' 
         Contents: '**/*'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
         cleanTargetFolder: false
