@@ -14,8 +14,8 @@ variables:
   clientDirectory: client
   serverDirectory: '$(System.DefaultWorkingDirectory)'
   stage: production
-  serviceConnection: dukevotes-test
-  appServiceName: dukevotes-test
+  serviceConnection: thebrotherhoodvotes
+  appServiceName: thebrotherhoodvotes
   INLINE_RUNTIME_CHUNK: false
  
 steps:
