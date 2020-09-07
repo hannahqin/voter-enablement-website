@@ -16,6 +16,7 @@ variables:
   stage: production
   serviceConnection: thebrotherhoodvotes
   appServiceName: thebrotherhoodvotes
+  azureSubscription: thebrotherhoodvotes
   INLINE_RUNTIME_CHUNK: false
  
 steps:
@@ -69,10 +70,15 @@ steps:
   inputs: 
     pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
  
-- task: AzureWebApp@1
+- task: AzureRmWebAppDeployment@4
   displayName: 'Deploy to App Service'
   inputs:
-    azureSubscription: '$(serviceConnection)'
-    appName: '$(appServiceName)'
-    appType: 'webApp'
-    package: '$(System.ArtifactsDirectory)/$(Build.BuildId).zip'
+    azureSubscription: $(azureSubscription)
+    WebAppName: $(appServiceName)
+    appType: webAppLinux
+    packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+    RuntimeStack: 'NODE|10.10'
+    StartupCommand: 'npm run start'
+    ScriptType: 'Inline Script'
+    InlineScript: |
+      npm install
