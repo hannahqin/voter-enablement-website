@@ -12,7 +12,7 @@ pool:
 # Set variables
 variables:
   clientDirectory: client
-  serverDirectory: server
+  serverDirectory: '$(System.DefaultWorkingDirectory)'
   stage: production
   serviceConnection: dukevotes-test
   appServiceName: dukevotes-test
