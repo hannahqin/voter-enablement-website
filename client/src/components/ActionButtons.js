@@ -47,7 +47,7 @@ function ActionButtons() {
 
   return (
     <React.Fragment>
-        <Grid item   xs={5} md={5} lg={5} className="button-container" 
+        <Grid item   xs={4} md={4} lg={4} className="button-container" 
           onClick={() => {
             setShowModal(true);
             setActionType('reg');
@@ -55,16 +55,17 @@ function ActionButtons() {
         >
             <Typography variant="h6" className={classes.root}>Register to Vote</Typography>
         </Grid>
-        <Grid item xs={1} md={1} lg={1}></Grid>
-        <Grid item  xs={5} md={5} lg={5} className="button-container" 
+        <Grid item xs={8} md={8} lg={8}></Grid>
+        <Grid item  xs={4} md={4} lg={4} className="button-container" 
           onClick={() => {
             setShowModal(true);
             setActionType('ab');
           }} 
         >
             <Typography variant="h6" className={classes.root}>Request Absentee Ballot</Typography>
-          </Grid>
-          <Grid item  xs={5} md={5} lg={5} className="button-container" style={{marginTop: '15vh'}}
+        </Grid>
+        <Grid item xs={8} md={8} lg={8}></Grid>
+        <Grid item  xs={4} md={4} lg={4} className="button-container"
             onClick={() => {
               setShowModal(true);
               setActionType('cr');
@@ -72,6 +73,7 @@ function ActionButtons() {
           >
             <Typography variant="h6" className={classes.root}>Check Registration Status</Typography>
           </Grid>
+          <Grid item xs={8} md={8} lg={8}></Grid>
           <Grid item xs={1} md={1} lg={1}></Grid>
           { showModal ? ( 
             <React.Fragment>
