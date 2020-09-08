@@ -71,14 +71,11 @@ steps:
     pathtoPublish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
  
 - task: AzureRmWebAppDeployment@4
-  displayName: 'Deploy to App Service'
   inputs:
-    azureSubscription: $(azureSubscription)
-    WebAppName: $(appServiceName)
-    appType: webAppLinux
-    packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-    RuntimeStack: 'NODE|10.10'
-    StartupCommand: 'npm run start'
-    ScriptType: 'Inline Script'
-    InlineScript: |
-      npm install
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'thebrotherhoodvotes'
+    appType: 'webAppLinux'
+    WebAppName: 'thebrotherhoodvotes'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'NODE|10-lts'
+    StartupCommand: 'npm install'
