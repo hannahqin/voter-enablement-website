@@ -65,6 +65,8 @@ stages:
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               RuntimeStack: 'NODE|10.10'
               StartupCommand: 'npm run start'
+              enableCustomDeployment: true
+              DeploymentType: zipDeploy
               ScriptType: 'Inline Script'
               InlineScript: |
                 npm install
