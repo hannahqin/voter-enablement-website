@@ -64,23 +64,14 @@ steps:
     archiveType: zip
     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
     replaceExistingArchive: true
- 
+
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Build Artifacts'
+- task: AzureWebApp@1 
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    ArtifactName: 'drop'
-    publishLocation: 'FilePath'
-    TargetPath: '/home/vsts/work/1/drop'
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'thebrotherhoodvotes'
-    appType: 'webAppLinux'
-    WebAppName: 'thebrotherhoodvotes'
-    packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-    RuntimeStack: 'NODE|10-lts'
-    StartupCommand: 'npm install'
+    azureSubscription: $(serviceConnection)
+    appType: webAppLinux
+    appName: $(appServiceName)
+    package: $(System.ArtifactsDirectory)/**/*.zip
 
 
 
