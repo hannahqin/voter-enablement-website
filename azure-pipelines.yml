@@ -70,9 +70,6 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'drop'
-    publishLocation: 'Container'
-
-
 
 - task: AzureRmWebAppDeployment@4
   inputs:
@@ -83,4 +80,6 @@ steps:
     packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
     RuntimeStack: 'NODE|10-lts'
     StartupCommand: 'npm install'
+
+
 
