@@ -8,11 +8,12 @@ html { font-size: calc(1em + 0.1vw) !important}
 
 .button-container {
   border-top: 1px solid white;
-  cursor: default;
+  cursor: pointer;
 }
 
 .button-container:hover {
   color: #5b92ff;
+  cursor: pointer;
 }
 
 #dukeLogo {
