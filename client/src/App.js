@@ -110,37 +110,35 @@ function App() {
    
   return (
     <ThemeProvider theme={theme}>
-      <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: 'black', height: '100vh'}} >
+      <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: 'black'}} >
         <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
-        <Grid container style={{marginTop: "20vh"}}>
-          <MainText />
-          {/* { useMediaQuery('(min-width:600px)') ? (
+        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}}>
             <MainText />
-           ) :  (<SmallMainText /> ) } */}
+            {/* { useMediaQuery('(min-width:600px)') ? (
+              <MainText />
+            ) :  (<SmallMainText /> ) } */}
+            <VoteForText />
         </Grid>
-        <Grid container style={{marginTop: "15vh"}}>
-          <VoteForText />
-        </Grid>
-        <Grid container style={{marginTop: "15vh"}}>
+        <Grid container style={{ minHeight: '100vh'}}>
           <Countdown />
-        </Grid>
-        <Grid container style={{marginTop: "15vh"}}>
           <ActionButtons />
         </Grid>
-        <Grid container style={{marginTop: "15vh"}} >
+        <Grid container style={{minHeight: '100vh'}} >
           <Map />
           <StateSelection />
         </Grid>
-        <Grid container style={{marginTop: "15vh"}}>
-          <Commercial />
-        </Grid>
-        <Grid container style={{marginTop: "15vh"}} 
-          direction="row"
-          justify="center"
-          alignItems="center">
-          <SocialMedia />
+        <Grid container style={{minHeight: "100vh"}}>
+          <Grid container>
+            <Commercial />
+          </Grid>
+          <Grid container 
+            direction="row"
+            justify="center"
+            alignItems="center">
+            <SocialMedia />
+          </Grid>
         </Grid>
       </Container>
     </ThemeProvider>
