@@ -13,7 +13,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.6.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-usa-map": "^1.5.0"
   },
   "scripts": {
     "dev-start": "react-scripts start",

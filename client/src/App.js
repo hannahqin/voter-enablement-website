@@ -13,6 +13,7 @@ import StateSelection from './components/StateSelection';
 import Commercial from './components/Commercial';
 import SocialMedia from './components/SocialMedia';
 import { spacing } from '@material-ui/system';
+import USAMap from "react-usa-map";
 
 
 import './App.css';
@@ -126,7 +127,7 @@ function App() {
           <ActionButtons />
         </Grid>
         <Grid container style={{minHeight: '100vh'}} >
-          <Map />
+          <USAMap />
           <StateSelection />
         </Grid>
         <Grid container style={{minHeight: "100vh"}}>
