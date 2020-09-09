@@ -110,7 +110,7 @@ function App() {
    
   return (
     <ThemeProvider theme={theme}>
-      <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: 'black'}} >
+      <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: '#00539B'}} >
         <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
