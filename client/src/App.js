@@ -88,6 +88,24 @@ theme.typography.h6 = {
   },
 };
 
+theme.typography.body1 = {
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.8rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '0.8rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '0.8rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('xl')]: {
+    fontSize: '2rem',
+  },
+};
+
 const callBackendAPI = async () => {
   const response = await fetch('/api/connected');
   const body = await response.json();
@@ -110,7 +128,7 @@ function App() {
    
   return (
     <ThemeProvider theme={theme}>
-      <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: '#00539B'}} >
+      <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: '#012169'}} >
         <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
@@ -125,19 +143,20 @@ function App() {
           <Countdown />
           <ActionButtons />
         </Grid>
-        <Grid container style={{minHeight: '100vh'}} >
-          <Map />
-          <StateSelection />
+        <Grid container style={{minHeight: '100vh'}}>
+            <Map />
+            <StateSelection />
         </Grid>
-        <Grid container style={{minHeight: "100vh"}}>
+        <Grid container>
           <Grid container>
             <Commercial />
           </Grid>
           <Grid container 
             direction="row"
             justify="center"
-            alignItems="center">
-            <SocialMedia />
+            alignItems="center"
+            style={{marginTop: '4em'}}>
+            <SocialMedia  />
           </Grid>
         </Grid>
       </Container>
