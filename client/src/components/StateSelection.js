@@ -41,8 +41,7 @@ export default function StateSelection() {
 
   return (
     <React.Fragment>
-    <Grid container item xs={12} md={12} lg={6} xl={6} style={{maxHeight: "30vh"}}>
-      <Grid item style={{ width: "100%" }}>
+      <Grid item xs={12} md={12} lg={6} xl={6} style={{maxHeight: "30vh" }}>
         <Autocomplete
           id="state-select"
           options={stateInfo}
@@ -56,9 +55,8 @@ export default function StateSelection() {
             />
           )}
         />
+        { stateValue ? <StateInformation selectedState={stateValue}/> : null}
       </Grid>
-      { stateValue ? <StateInformation selectedState={stateValue}/> : null}
-    </Grid>
   </React.Fragment>
   );
 }
