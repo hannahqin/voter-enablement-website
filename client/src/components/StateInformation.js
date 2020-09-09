@@ -11,7 +11,6 @@ const useStyles = makeStyles({
     root: {
       fontFamily: 'Libre Franklin !important',
       fontWeight: '100 !important',
-      fontSize: '2em',
     },
   });
 
@@ -20,7 +19,7 @@ export default function StateInformation(props) {
 
   return (
     <React.Fragment>
-    <Grid container xs={12} md={12} lg={12}>
+    <Grid container xs={12} md={12} lg={12} style={{marginTop: '2em'}}>
       <Grid item style={{width: "100%" }}>
           <Grid item style={{marginBottom: '1em'}}>
             <Typography variant="h6" className={classes.root}> Voter Registration Deadline</Typography>

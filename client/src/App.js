@@ -88,6 +88,7 @@ theme.typography.h6 = {
   },
 };
 
+
 const callBackendAPI = async () => {
   const response = await fetch('/api/connected');
   const body = await response.json();
@@ -125,9 +126,9 @@ function App() {
           <Countdown />
           <ActionButtons />
         </Grid>
-        <Grid container style={{minHeight: '100vh'}} >
-          <Map />
-          <StateSelection />
+        <Grid container style={{minHeight: '100vh'}}>
+            <Map />
+            <StateSelection />
         </Grid>
         <Grid container style={{minHeight: "100vh"}}>
           <Grid container>

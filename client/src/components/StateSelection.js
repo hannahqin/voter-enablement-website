@@ -24,26 +24,24 @@ const StateTextField = withStyles({
     },
     "& input": {
       color: "white",
-      fontSize: "5em",
     },
     "& label": {
       color: "white",
-      fontSize: "2em",
     },
     "& label::focus": {
       color: "white !important",
-      fontSize: "1.5em",
     },
   },
 })(TextField);
 
 export default function StateSelection() {
   const classes = useStyles();
-  const [selectedState, setSelectedState] = useState(stateInfo[0])
+  const [stateValue, setStateValue] = useState(stateInfo[0])
+  const [inputValue, setInputValue] = React.useState('');
 
   return (
     <React.Fragment>
-    <Grid container xs={5} md={5} lg={5} style={{maxHeight: "30vh"}}>
+    <Grid container item xs={12} md={12} lg={6} xl={6} style={{maxHeight: "30vh"}}>
       <Grid item style={{ width: "100%" }}>
         <Autocomplete
           id="state-select"
@@ -59,7 +57,7 @@ export default function StateSelection() {
           )}
         />
       </Grid>
-      { selectedState ? <StateInformation selectedState={selectedState}/> : null}
+      { stateValue ? <StateInformation selectedState={stateValue}/> : null}
     </Grid>
   </React.Fragment>
   );
