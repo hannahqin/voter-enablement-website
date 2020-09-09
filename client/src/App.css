@@ -9,6 +9,7 @@ html { font-size: calc(1em + 0.1vw) !important}
 .button-container {
   border-top: 1px solid white;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .button-container:hover {
