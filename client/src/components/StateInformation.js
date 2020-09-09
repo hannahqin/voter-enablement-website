@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     root: {
       fontFamily: 'Libre Franklin !important',
       fontWeight: '100 !important',
-      fontSize: '2em'
+      fontSize: '2em',
     },
   });
 
@@ -22,12 +22,18 @@ export default function StateInformation(props) {
     <React.Fragment>
     <Grid container xs={12} md={12} lg={12}>
       <Grid item style={{width: "100%" }}>
-        <Typography variant="h6" className={classes.root}> Voter Registration Deadline</Typography>
-        <Typography variant="h6" className={classes.root}><strong>{props.selectedState.vrd_inperson}</strong></Typography>
-        <Typography variant="h6" className={classes.root}> Absentee Application Deadline</Typography>
-        <Typography variant="h6" className={classes.root}><strong>{props.selectedState.abs_app}</strong></Typography>
-        <Typography variant="h6" className={classes.root}> Early Voting</Typography>
-        <Typography variant="h6" className={classes.root}><strong>{props.selectedState.abs_early}</strong></Typography>
+          <Grid item style={{marginBottom: '1em'}}>
+            <Typography variant="h6" className={classes.root}> Voter Registration Deadline</Typography>
+            <Typography variant="h6" className={classes.root}><strong>{props.selectedState.vrd_inperson}</strong></Typography>
+          </Grid>
+          <Grid item style={{marginBottom: '1em'}}>
+            <Typography variant="h6" className={classes.root}> Absentee Application Deadline</Typography>
+            <Typography variant="h6" className={classes.root}><strong>{props.selectedState.abs_app}</strong></Typography>
+          </Grid>
+          <Grid item style={{marginBottom: '1em'}}>
+            <Typography variant="h6" className={classes.root}> Early Voting</Typography>
+            <Typography variant="h6" className={classes.root}><strong>{props.selectedState.abs_early}</strong></Typography>
+          </Grid>
       </Grid>
     </Grid>
   </React.Fragment>

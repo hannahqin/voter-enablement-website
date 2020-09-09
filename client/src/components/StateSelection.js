@@ -43,7 +43,7 @@ export default function StateSelection() {
 
   return (
     <React.Fragment>
-    <Grid container xs={5} md={5} lg={5}>
+    <Grid container xs={5} md={5} lg={5} style={{maxHeight: "30vh"}}>
       <Grid item style={{ width: "100%" }}>
         <Autocomplete
           id="state-select"
