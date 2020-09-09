@@ -1,11 +1,11 @@
 /* eslint-disable no-use-before-define */
-import React, {useState} from "react";
+import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { makeStyles, withTheme, withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import stateInfo from "./StateInfo.json";
-import StateInformation from './StateInformation';
+import StateInformation from "./StateInformation";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,16 +36,24 @@ const StateTextField = withStyles({
 
 export default function StateSelection() {
   const classes = useStyles();
-  const [stateValue, setStateValue] = useState(stateInfo[0])
-  const [inputValue, setInputValue] = React.useState('');
+  const [stateValue, setStateValue] = useState(stateInfo[0]);
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <React.Fragment>
-      <Grid item xs={12} md={12} lg={6} xl={6} style={{maxHeight: "30vh" }}>
+      <Grid item xs={12} md={12} lg={6} xl={6} style={{ maxHeight: "30vh" }}>
         <Autocomplete
           id="state-select"
           options={stateInfo}
           getOptionLabel={(option) => option.state}
+          value={stateValue}
+          onChange={(event, newValue) => {
+            setStateValue(newValue);
+          }}
+          inputValue={inputValue}
+          onInputChange={(event, newInputValue) => {
+            setInputValue(newInputValue);
+          }}
           style={{ width: "100%" }}
           renderInput={(params) => (
             <StateTextField
@@ -55,8 +63,8 @@ export default function StateSelection() {
             />
           )}
         />
-        { stateValue ? <StateInformation selectedState={stateValue}/> : null}
+        {stateValue ? <StateInformation selectedState={stateValue} /> : null}
       </Grid>
-  </React.Fragment>
+    </React.Fragment>
   );
 }

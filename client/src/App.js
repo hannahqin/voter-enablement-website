@@ -134,9 +134,6 @@ function App() {
         </Grid>
         <Grid container style={{marginTop: "20vh", minHeight: '100vh'}}>
             <MainText />
-            {/* { useMediaQuery('(min-width:600px)') ? (
-              <MainText />
-            ) :  (<SmallMainText /> ) } */}
             <VoteForText />
         </Grid>
         <Grid container style={{ minHeight: '100vh'}}>
