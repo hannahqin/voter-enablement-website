@@ -25,9 +25,9 @@ const useStyles = makeStyles((theme) => ({
     "&:hover .MuiOutlinedInput-notchedOutline": {
       borderColor: "white"
     },
-    // "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-    //   borderColor: "purple"
-    // }
+    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#0577B1"
+    }
   },
   clearIndicator: {
     color: "white",
@@ -52,9 +52,9 @@ const StateTextField = withStyles({
     "& label": {
       color: "white",
     },
-    "& label::focus": {
-      color: "white !important",
-    },
+    "& label.Mui-focused": {
+      color: "#0577B1 !important",
+    }
   },
 })(TextField);
 
