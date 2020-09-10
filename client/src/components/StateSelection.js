@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
 const StateTextField = withStyles({
   root: {
     "& input + fieldset": {
-      borderColor: "white",
       borderWidth: 2,
       borderLeft: 0,
       borderRight: 0,
@@ -24,6 +23,7 @@ const StateTextField = withStyles({
     },
     "& input": {
       color: "white",
+      fontSize: '4em',
     },
     "& label": {
       color: "white",
