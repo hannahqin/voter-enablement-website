@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -50,10 +50,10 @@ export function SmallMainText() {
 
 export function VoteForText() {
     const classes = useStyles();
-
+    
     return (
         <React.Fragment>
-            <Grid item xs={12} md={12} lg={12}>
+            <Grid item xs={12} md={12} lg={12} style={{cursor: 'pointer'}}>
                 <Typography variant="h3"><strong>WHAT WILL YOU VOTE FOR?</strong></Typography>
                 <Typography variant="h6" className={classes.root}>Make your voting plan here <span><ArrowDropDownIcon style={{fontSize: "1em"}}/></span></Typography>
             </Grid>

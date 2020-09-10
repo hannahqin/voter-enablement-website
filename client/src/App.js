@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider, withTheme } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Container from '@material-ui/core/Container';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './components/Header';
@@ -115,10 +117,16 @@ const callBackendAPI = async () => {
   }
   return body;
 };
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
 
 function App() {
   const classes=useStyles();
   const [apiTest, setAPITest] = useState({data: 'TEST'});
+
+  const refToScroll1 = useRef(null)
+  const refToScroll2 = useRef(null)
+  const executeScrollTo1 = () => scrollToRef(refToScroll1)
+  const executeScrollTo2 = () => scrollToRef(refToScroll2)
 
   useEffect(() => {
     callBackendAPI()
@@ -132,18 +140,21 @@ function App() {
         <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
-        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}}>
+        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}} >
             <MainText />
-            {/* { useMediaQuery('(min-width:600px)') ? (
-              <MainText />
-            ) :  (<SmallMainText /> ) } */}
-            <VoteForText />
+            <grid item onClick={executeScrollTo1}>
+              <VoteForText />
+            </grid>
         </Grid>
-        <Grid container style={{ minHeight: '100vh'}}>
+        <Grid container style={{ minHeight: '100vh'}} ref={refToScroll1}>
           <Countdown />
           <ActionButtons />
+          <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
+            <ArrowDropDownIcon style={{fontSize: '10em'}} />
+          </Grid>
         </Grid>
-        <Grid container style={{minHeight: '100vh'}}>
+        <Grid container style={{minHeight: '100vh'}} ref={refToScroll2}>
+            <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
             <Map />
             <StateSelection />
         </Grid>
