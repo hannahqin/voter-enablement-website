@@ -53,7 +53,7 @@ function ActionButtons() {
             setActionType('reg');
           }} 
         >
-            <Typography variant="h3" className={classes.root}>Register to Vote</Typography>
+            <Typography variant="h3" className={classes.root}>Register to Vote &#8594;</Typography>
         </Grid>
         <Grid item xs={2} md={2} lg={1}></Grid>
         <Grid item  xs={10} md={4} lg={5} className="button-container" style={{maxWidth: '700px'}}
@@ -62,7 +62,7 @@ function ActionButtons() {
             setActionType('ab');
           }} 
         >
-            <Typography variant="h3" className={classes.root}>Request Absentee Ballot</Typography>
+            <Typography variant="h3" className={classes.root}>Request Absentee Ballot &#8594;</Typography>
         </Grid>
         <Grid item xs={2} md={2} lg={1}></Grid>
         <Grid item  xs={10} md={4} lg={5} className="button-container" style={{maxWidth: '700px'}}
@@ -71,7 +71,7 @@ function ActionButtons() {
               setActionType('cr');
             }} 
           >
-            <Typography variant="h3" className={classes.root}>Check Registration Status</Typography>
+            <Typography variant="h3" className={classes.root}>Check Registration Status &#8594;</Typography>
           </Grid>
           <Grid item xs={2} md={2} lg={1}></Grid>
           <Grid item xs={1} md={1} lg={1}></Grid>
