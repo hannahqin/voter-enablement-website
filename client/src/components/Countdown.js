@@ -3,7 +3,8 @@ import moment from "moment";
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import countdown from 'countdown';
+import momentcountdown from 'moment-countdown';
 import '../App.css';
 
 const useStyles = makeStyles({
@@ -16,17 +17,10 @@ const useStyles = makeStyles({
 function Countdown() {
   const classes=useStyles();
 
-  const DaysLeft = () => {
-    const electionDay = moment([2020, 11, 3]);
-    const currentDate = moment();
-    const timeTo = electionDay.diff(currentDate, 'days');
-    return timeTo;
-  }
-
   return (
     <React.Fragment>
         <Grid item>
-            <Typography variant="h3">THERE ARE ONLY {moment([2020, 11,3]).diff(moment(), 'days')} DAYS TO NOVEMBER 3RD</Typography>
+            <Typography variant="h3">THERE ARE ONLY {moment().countdown("2020-11-03", countdown.DAYS, NaN, 0).toString()} TO NOVEMBER 3RD</Typography>
             <Typography variant="h6" className={classes.root}>Let's make sure your vote will count.</Typography>
         </Grid>
     </React.Fragment>
