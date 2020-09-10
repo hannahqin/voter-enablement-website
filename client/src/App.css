@@ -4,7 +4,10 @@ body {
   color: white;
 }
 
-html { font-size: calc(1em + 0.1vw) !important}
+html { 
+  font-size: calc(1em + 0.1vw) !important;
+  scroll-behavior: smooth;
+}
 
 .button-container {
   border-top: 1px solid white;
