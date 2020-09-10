@@ -44,7 +44,7 @@ const MapChart = (props) => {
                 stroke="#FFF"
                 geography={geo}
                 //===============================================change this line
-                fill={geo.properties.name === 'Washington' ? "blue" : "#DDD" }
+                fill={geo.properties.name === props.selectedState.state ? "blue" : "#DDD" }
               />
             ))}
             {geographies.map(geo => {

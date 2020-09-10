@@ -61,6 +61,7 @@ const StateTextField = withStyles({
 export default function StateSelection(props) {
   const classes = useStyles();
   const [inputValue, setInputValue] = useState("");
+  console.log('props.selectedstate', props.selectedState);
 
   return (
     <React.Fragment>
@@ -70,7 +71,7 @@ export default function StateSelection(props) {
           classes={classes}
           options={stateInfo}
           getOptionLabel={(option) => option.state}
-          value={props.stateValue.state}
+          value={props.selectedState}
           onChange={(event, newInputValue) => {
             props.changeState(newInputValue)}
           }
@@ -87,7 +88,7 @@ export default function StateSelection(props) {
             />
           )}
         />
-        {props.stateValue ? <StateInformation selectedState={props.stateValue} /> : null}
+        {props.selectedState ? <StateInformation selectedState={props.selectedState} /> : null}
       </Grid>
     </React.Fragment>
   );

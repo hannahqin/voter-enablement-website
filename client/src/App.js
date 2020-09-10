@@ -156,7 +156,7 @@ function App() {
         <Grid container id="stateInfoContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
             <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
             <Map selectedState={selState} />
-            <StateSelection changeState={changeState} stateValue={selState} />
+            <StateSelection changeState={changeState} selectedState={selState} />
         </Grid>
         <Grid container id="shareContainer" style={{minHeight: '100vh'}}>
           <Grid container>
