@@ -27,7 +27,7 @@ const offsets = {
   DC: [49, 21]
 };
 
-const MapChart = () => {
+const MapChart = (props) => {
   const logId = (id) => {
     console.log("ID", id);
   }
@@ -43,7 +43,8 @@ const MapChart = () => {
                 key={geo.rsmKey}
                 stroke="#FFF"
                 geography={geo}
-                fill="#DDD"
+                //===============================================change this line
+                fill={geo.properties.name === 'Washington' ? "blue" : "#DDD" }
               />
             ))}
             {geographies.map(geo => {

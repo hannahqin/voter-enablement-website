@@ -10,7 +10,8 @@
    "abs_person": "2-Nov",
    "abs_early": "Not available in Alabama",
    "abs_rules": "All voters are eligible to vote by absentee ballot in the general election held on November 3, 2020 due to COVID-19. To do so, they can check the box \"I have a physical illness or infirmity which prevents my attendance at the polls\" on their absentee application.",
-   "local": "https://www.sos.alabama.gov/city-county-lookup/absentee-election-manager"
+   "local": "https://www.sos.alabama.gov/city-county-lookup/absentee-election-manager",
+   "id": "ID"
  },
  {
    "state": "Alaska",
@@ -23,7 +24,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 19 - Nov 2",
    "abs_rules": "Any registered Alaska voter may apply for an absentee ballot and vote by mail. ",
-   "local": "https://www.elections.alaska.gov/Core/contacttheabsenteeandpetitionoffice.php"
+   "local": "https://www.elections.alaska.gov/Core/contacttheabsenteeandpetitionoffice.php",
+   "id": "AK"
  },
  {
    "state": "Arizona",
@@ -36,7 +38,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 7 - Oct 30",
    "abs_rules": "Any registered Arizona voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://azsos.gov/county-election-info"
+   "local": "https://azsos.gov/county-election-info",
+   "id": "AZ"
  },
  {
    "state": "Arkansas",
@@ -49,7 +52,8 @@
    "abs_person": "Nov 2 by 5pm",
    "abs_early": "Oct 19 - Nov 2",
    "abs_rules": "All voters are eligible to vote by absentee ballot in the general election held on November 3, 2020 due to COVID-19.",
-   "local": "https://www.sos.arkansas.gov/uploads/elections/County_Clerk_Contact_List_-_Rev._8-19-2020__1.pdf"
+   "local": "https://www.sos.arkansas.gov/uploads/elections/County_Clerk_Contact_List_-_Rev._8-19-2020__1.pdf",
+   "id": "AR"
  },
  {
    "state": "California",
@@ -62,7 +66,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 5 - Nov 2",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "CA"
  },
  {
    "state": "Colorado",
@@ -75,7 +80,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 19 - Nov 2",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "CO"
  },
  {
    "state": "Connecticut",
@@ -88,7 +94,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Not available in Connecticut",
    "abs_rules": "All voters are eligible to vote by absentee ballot in the general election held on November 3, 2020 due to COVID-19",
-   "local": "http://www.ctclerks.com/content/5645/5649/default.aspx"
+   "local": "http://www.ctclerks.com/content/5645/5649/default.aspx",
+   "id": "CN"
  },
  {
    "state": "Delaware",
@@ -101,7 +108,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "In-person absentee voting is available prior to Election Day",
    "abs_rules": "During the current State of Emergency, voters are permitted to vote by absentee for the reason: \"I am sick, or physically disabled\" if they are impacted by COVID-19, per the provisions of an order by the Governor. This includes those who are practicing self-quarantining or social distancing. This is reason #3 on the absentee ballot application.",
-   "local": "https://elections.delaware.gov/locations.shtml"
+   "local": "https://elections.delaware.gov/locations.shtml",
+   "id": "DE"
  },
  {
    "state": "District of Columbia",
@@ -114,7 +122,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 27 - Nov 2",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "DC"
  },
  {
    "state": "Florida",
@@ -127,7 +136,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 24 - Oct 31",
    "abs_rules": "Any registered Florida voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://dos.elections.myflorida.com/supervisors/"
+   "local": "https://dos.elections.myflorida.com/supervisors/",
+   "id": "FL"
  },
  {
    "state": "Georgia",
@@ -140,7 +150,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 12 - Oct 30",
    "abs_rules": "Any registered Georgia voter may apply for an absentee ballot and vote absentee.",
-   "local": "https://elections.sos.ga.gov/Elections/countyregistrars.do"
+   "local": "https://elections.sos.ga.gov/Elections/countyregistrars.do",
+   "id": "GA"
  },
  {
    "state": "Hawaii",
@@ -153,7 +164,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 20 - Nov 2",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "HI"
  },
  {
    "state": "Idaho",
@@ -166,7 +178,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 19 - Oct 30",
    "abs_rules": "Any registered Idaho voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://idahovotes.gov/county-clerks/"
+   "local": "https://idahovotes.gov/county-clerks/",
+   "id": "ID"
  },
  {
    "state": "Illinois",
@@ -179,7 +192,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Sept 24 - Nov 2",
    "abs_rules": "Any registered Illinois voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx"
+   "local": "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx",
+   "id": "IL"
  },
  {
    "state": "Indiana",
@@ -192,7 +206,8 @@
    "abs_person": "Nov 3 by noon",
    "abs_early": "Oct 6 - Nov 2",
    "abs_rules": "Must meet specific criteria in order to vote by mail.",
-   "local": ""
+   "local": "",
+   "id": "IN"
  },
  {
    "state": "Iowa",
@@ -205,7 +220,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 5 - Nov 2",
    "abs_rules": "Any registered Iowa voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://sos.iowa.gov/elections/auditors/auditorslist.html"
+   "local": "https://sos.iowa.gov/elections/auditors/auditorslist.html",
+   "id": "IA"
  },
  {
    "state": "Kansas",
@@ -218,7 +234,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 14 - Nov 2",
    "abs_rules": "Any registered Kansas voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.sos.ks.gov/elections/county_election_officers.aspx"
+   "local": "https://www.sos.ks.gov/elections/county_election_officers.aspx",
+   "id": "KS"
  },
  {
    "state": "Kentucky",
@@ -231,7 +248,8 @@
    "abs_person": "Nov 3 by 6pm",
    "abs_early": "Not available in Kentucky",
    "abs_rules": "By Executive Order, all Kentuckians who are concerned about contracting or spreading COVID-19 may vote via absentee ballot for the 2020 general election.",
-   "local": "https://elect.ky.gov/About-Us/Pages/County-Clerks.aspx"
+   "local": "https://elect.ky.gov/About-Us/Pages/County-Clerks.aspx",
+   "id": "KY"
  },
  {
    "state": "Louisiana",
@@ -244,7 +262,8 @@
    "abs_person": "Nov 2 by 4:30pm",
    "abs_early": "Oct 20 - Oct 27",
    "abs_rules": "Must meet specific criteria in order to vote by mail. They barely expanded requirements due to COVID, and they are considering requiring a positive COVID test result in order to vote absentee.",
-   "local": ""
+   "local": "",
+   "id": "LA"
  },
  {
    "state": "Maine",
@@ -257,7 +276,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 5 - Oct 29",
    "abs_rules": "Any registered Maine voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.maine.gov/sos/cec/elec/munic.html"
+   "local": "https://www.maine.gov/sos/cec/elec/munic.html",
+   "id": "ME"
  },
  {
    "state": "Maryland",
@@ -270,7 +290,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 26 - Oct 29",
    "abs_rules": "Any registered Maryland voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.elections.maryland.gov/about/county_boards.html"
+   "local": "https://www.elections.maryland.gov/about/county_boards.html",
+   "id": "MD"
  },
  {
    "state": "Massachusetts",
@@ -283,7 +304,8 @@
    "abs_person": "",
    "abs_early": "Oct 17 - Oct 30",
    "abs_rules": "Any registered Massachusetts voter may apply for an early voting ballot and vote by mail.",
-   "local": "https://www.sec.state.ma.us/ele/eleev/ev-find-my-election-office.htm"
+   "local": "https://www.sec.state.ma.us/ele/eleev/ev-find-my-election-office.htm",
+   "id": "MA"
  },
  {
    "state": "Michigan",
@@ -296,7 +318,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "In-person absentee voting is available from Sept 21 - Nov 2",
    "abs_rules": "Any registered Michigan voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://mvic.sos.state.mi.us/Voter/Index/#yourclerk"
+   "local": "https://mvic.sos.state.mi.us/Voter/Index/#yourclerk",
+   "id": "MI"
  },
  {
    "state": "Minnesota",
@@ -309,7 +332,8 @@
    "abs_person": "Nov 3 by 3pm",
    "abs_early": "In-person absentee voting is available from Sept 18 - Nov 2",
    "abs_rules": "Any registered Minnesota voter may apply for an absentee ballot and vote by absentee ballot.",
-   "local": "https://www.sos.state.mn.us/elections-voting/find-county-election-office/"
+   "local": "https://www.sos.state.mn.us/elections-voting/find-county-election-office/",
+   "id": "MN"
  },
  {
    "state": "Mississippi",
@@ -322,7 +346,8 @@
    "abs_person": "3-Nov",
    "abs_early": "In-person absentee voting is available from Sept 21 - Oct 31",
    "abs_rules": "Must meet specific criteria in order to vote by mail, and they haven't addressed COVID-19. ACLU filed a lawsuit with them.",
-   "local": "https://www.aclu-ms.org/sites/default/files/field_documents/let_me_vote_backgrounder.pdf"
+   "local": "https://www.aclu-ms.org/sites/default/files/field_documents/let_me_vote_backgrounder.pdf",
+   "id": "MS"
  },
  {
    "state": "Missouri",
@@ -335,7 +360,8 @@
    "abs_person": "2-Nov",
    "abs_early": "In-person absentee voting is available from Oct 21 - Nov 2",
    "abs_rules": "Missouri mail-in ballot voters will be required to submit a notarized statement with their ballot; however in limited instances, including for voters who have contracted or are at-risk of contracting COVID-19 because of specific health concerns, a voter may cast a mail-in ballot without notarization.",
-   "local": ""
+   "local": "",
+   "id": "MO"
  },
  {
    "state": "Montana",
@@ -348,7 +374,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "In-person absentee voting is available from Oct 5 - Nov 2",
    "abs_rules": "Any registered Montana voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://sosmt.gov/Portals/142/Elections/Forms/electionadministrators.pdf"
+   "local": "https://sosmt.gov/Portals/142/Elections/Forms/electionadministrators.pdf",
+   "id": "MT"
  },
  {
    "state": "Nebraska",
@@ -361,7 +388,8 @@
    "abs_person": "3-Nov",
    "abs_early": "In-person absentee voting is available from Oct 5 - Nov 2",
    "abs_rules": "Any registered Nebraska voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://sos.nebraska.gov/elections/election-officials-contact-information"
+   "local": "https://sos.nebraska.gov/elections/election-officials-contact-information",
+   "id": "NE"
  },
  {
    "state": "Nevada",
@@ -374,7 +402,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 17 - Oct 30",
    "abs_rules": "Any registered Nevada voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.nvsos.gov/sos/elections/voters/county-clerk-contact-information"
+   "local": "https://www.nvsos.gov/sos/elections/voters/county-clerk-contact-information",
+   "id": "NV"
  },
  {
    "state": "New Hampshire",
@@ -387,7 +416,8 @@
    "abs_person": "Nov 3 by 5pm",
    "abs_early": "Not available in New Hampshire",
    "abs_rules": "For the 2020 primary and general elections, any New Hampshire voter can apply for an absentee ballot and vote by mail.",
-   "local": "https://app.sos.nh.gov/Public/ClerkDetails.aspx"
+   "local": "https://app.sos.nh.gov/Public/ClerkDetails.aspx",
+   "id": "NH"
  },
  {
    "state": "New Jersey",
@@ -400,7 +430,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Sep 19 - Nov 2",
    "abs_rules": "Any registered New Jersey voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.state.nj.us/state/elections/county-eo.shtml"
+   "local": "https://www.state.nj.us/state/elections/county-eo.shtml",
+   "id": "NJ"
  },
  {
    "state": "New Mexico",
@@ -413,7 +444,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 17 - Oct 31",
    "abs_rules": "Any registered New Mexico voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.sos.state.nm.us/voting-and-elections/voter-information/county-clerk-information/"
+   "local": "https://www.sos.state.nm.us/voting-and-elections/voter-information/county-clerk-information/",
+   "id": "NM"
  },
  {
    "state": "New York",
@@ -426,7 +458,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 24 - Nov 1",
    "abs_rules": "All voters are authorized to request an absentee ballot due to risk of illness, including COVID-19.",
-   "local": "https://www.elections.ny.gov/NYSBOE/Counties/CountyBoardRoster06172020.pdf"
+   "local": "https://www.elections.ny.gov/NYSBOE/Counties/CountyBoardRoster06172020.pdf",
+   "id": "NY"
  },
  {
    "state": "North Carolina",
@@ -439,7 +472,8 @@
    "abs_person": "Nov 3 by 5pm",
    "abs_early": "Oct 15 - Oct 31",
    "abs_rules": "Any registered North Carolina voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://vt.ncsbe.gov/BOEInfo/"
+   "local": "https://vt.ncsbe.gov/BOEInfo/",
+   "id": "NC"
  },
  {
    "state": "North Dakota",
@@ -452,7 +486,8 @@
    "abs_person": "Nov 3 by 4pm",
    "abs_early": "Oct 19 - Nov 2",
    "abs_rules": "Any North Dakota resident may apply for an absentee ballot and vote by mail.",
-   "local": "https://vip.sos.nd.gov/CountyAuditors.aspx"
+   "local": "https://vip.sos.nd.gov/CountyAuditors.aspx",
+   "id": "ND"
  },
  {
    "state": "Ohio",
@@ -465,7 +500,8 @@
    "abs_person": "Nov 3 by 7:30pm",
    "abs_early": "Oct 6 - Nov 2",
    "abs_rules": "Any registered Ohio voter may apply for an absentee ballot and vote absentee.",
-   "local": "https://www.sos.state.oh.us/elections/elections-officials/county-boards-of-elections-directory/"
+   "local": "https://www.sos.state.oh.us/elections/elections-officials/county-boards-of-elections-directory/",
+   "id": "OH"
  },
  {
    "state": "Oklahoma",
@@ -478,7 +514,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 29 - Oct 31",
    "abs_rules": "Any registered Oklahoma voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.ok.gov/elections/About_Us/County_Election_Boards/index.html"
+   "local": "https://www.ok.gov/elections/About_Us/County_Election_Boards/index.html",
+   "id": "OK"
  },
  {
    "state": "Oregon",
@@ -491,7 +528,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Ballot drop box sites are open 18-20 days before Election Day, depending on your area",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "OR"
  },
  {
    "state": "Pennsylvania",
@@ -504,7 +542,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Not available in Pennsylvania",
    "abs_rules": "Any registered Pennsylvania voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.votespa.com/Resources/Pages/Contact-Your-Election-Officials.aspx"
+   "local": "https://www.votespa.com/Resources/Pages/Contact-Your-Election-Officials.aspx",
+   "id": "PA"
  },
  {
    "state": "Rhode Island",
@@ -517,7 +556,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 14 - Nov 2",
    "abs_rules": "Any registered Rhode Island voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://elections.ri.gov/canvassers/index.php"
+   "local": "https://elections.ri.gov/canvassers/index.php",
+   "id": "RI"
  },
  {
    "state": "South Carolina",
@@ -530,7 +570,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "In-person absentee voting is available from Oct 5 - Nov 2",
    "abs_rules": "Voters can only vote absentee with an approved excuse in November. ",
-   "local": ""
+   "local": "",
+   "id": "SC"
  },
  {
    "state": "South Dakota",
@@ -543,7 +584,8 @@
    "abs_person": "3-Nov",
    "abs_early": "In-person absentee voting is available from Sept 18 - Nov 2",
    "abs_rules": "Any registered South Dakota voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://vip.sdsos.gov/CountyAuditors.aspx"
+   "local": "https://vip.sdsos.gov/CountyAuditors.aspx",
+   "id": "SD"
  },
  {
    "state": "Tennessee",
@@ -556,7 +598,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Oct 14 - Oct 29",
    "abs_rules": "Voters need a valid excuse to vote absentee. TN Supreme Court recently overturned the option for all eligible voters to vote by mail in November due to COVID-19.",
-   "local": ""
+   "local": "",
+   "id": "TN"
  },
  {
    "state": "Texas",
@@ -569,7 +612,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "Oct 13 - Oct 30",
    "abs_rules": "Voters need a valid excuse to vote absentee. COVID-19 isn't a sufficient reason",
-   "local": ""
+   "local": "",
+   "id": "TX"
  },
  {
    "state": "Utah",
@@ -582,7 +626,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 20 - Oct 30",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "UT"
  },
  {
    "state": "Vermont",
@@ -595,7 +640,8 @@
    "abs_person": "3-Nov",
    "abs_early": "Sept 19 - Nov 2",
    "abs_rules": "Any registered Vermont voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://www.usvotefoundation.org/vote/eoddomestic.htm"
+   "local": "https://www.usvotefoundation.org/vote/eoddomestic.htm",
+   "id": "VT"
  },
  {
    "state": "Virginia",
@@ -608,7 +654,8 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "In-person absentee voting is available from Sept 19 - Oct 31",
    "abs_rules": "Any registered Virginia voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://vote.elections.virginia.gov/VoterInformation/PublicContactLookup"
+   "local": "https://vote.elections.virginia.gov/VoterInformation/PublicContactLookup",
+   "id": "VA"
  },
  {
    "state": "Washington",
@@ -621,7 +668,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "Oct 16 - Nov 3",
    "abs_rules": null,
-   "local": ""
+   "local": "",
+   "id": "WA"
  },
  {
    "state": "West Virginia",
@@ -634,7 +682,8 @@
    "abs_person": "2-Nov",
    "abs_early": "Oct 21 - Oct 31",
    "abs_rules": "All West Virginia voters will be able to cite concerns related to the COVID-19 pandemic as reason to request an absentee ballot for the November general election",
-   "local": "https://sos.wv.gov/elections/Pages/CountyClerkDirectory.aspx"
+   "local": "https://sos.wv.gov/elections/Pages/CountyClerkDirectory.aspx",
+   "id": "WV"
  },
  {
    "state": "Wisconsin",
@@ -647,7 +696,8 @@
    "abs_person": "Nov 3 by 8pm",
    "abs_early": "In-person absentee voting is available from Oct 20 - Nov 1",
    "abs_rules": "Any registered Wisconsin voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://myvote.wi.gov/en-US/MyMunicipalClerk"
+   "local": "https://myvote.wi.gov/en-US/MyMunicipalClerk",
+   "id": "WI"
  },
  {
    "state": "Wyoming",
@@ -660,6 +710,7 @@
    "abs_person": "Nov 3 by 7pm",
    "abs_early": "In-person absentee voting is available from Sept 18 - Nov 2",
    "abs_rules": "Any registered Wyoming voter may apply for an absentee ballot and vote by mail.",
-   "local": "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf"
+   "local": "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf",
+   "id": "WY"
  }
 ]
