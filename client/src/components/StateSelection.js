@@ -10,7 +10,31 @@ import StateInformation from "./StateInformation";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
+    paddingTop: "1.5rem",
   },
+  inputRoot: {
+    color: "white",
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "white",
+      borderWidth: 2,
+      borderLeft: 0,
+      borderRight: 0,
+      borderTop: 0,
+      borderRadius: 0,
+    },
+    "&:hover .MuiOutlinedInput-notchedOutline": {
+      borderColor: "white"
+    },
+    // "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+    //   borderColor: "purple"
+    // }
+  },
+  clearIndicator: {
+    color: "white",
+  },
+  popupIndicator: {
+    color: "white",
+  }
 }));
 
 const StateTextField = withStyles({
@@ -44,6 +68,7 @@ export default function StateSelection() {
       <Grid item xs={12} md={12} lg={6} xl={6} style={{paddingBottom: "5rem"}}>
         <Autocomplete
           id="state-select"
+          classes={classes}
           options={stateInfo}
           getOptionLabel={(option) => option.state}
           value={stateValue}

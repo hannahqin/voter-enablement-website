@@ -93,5 +93,17 @@ svg {
 }
 
 #shareContainer {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #state-select {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 960px) {
+  #state-select {
+    font-size: 2.5em;
+  }
 }
