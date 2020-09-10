@@ -19,8 +19,8 @@ function Countdown() {
 
   return (
     <React.Fragment>
-        <Grid item>
-            <Typography variant="h3">THERE ARE ONLY {moment().countdown("2020-11-03", countdown.DAYS, NaN, 0).toString()} TO NOVEMBER 3RD</Typography>
+        <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h3" style={{textTransform: "uppercase"}}>THERE ARE ONLY {moment().countdown("2020-11-03", countdown.DAYS, NaN, 0).toString()} TO NOVEMBER 3RD</Typography>
             <Typography variant="h6" className={classes.root}>Let's make sure your vote will count.</Typography>
         </Grid>
     </React.Fragment>
