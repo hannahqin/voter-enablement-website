@@ -55,13 +55,13 @@ theme.typography.h3 = {
 // share CTA
 theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
-    fontSize: '0.8rem',
+    fontSize: '1rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1rem',
+    fontSize: '1.2rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1rem',
+    fontSize: '1.5rem',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '2rem',
@@ -139,14 +139,12 @@ function App() {
         <Grid container style={{ minHeight: '100vh'}} ref={refToScroll1}>
           <Countdown />
           <ActionButtons />
-          <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
+          {/* <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
             <ArrowDropDownIcon style={{fontSize: '10em'}} />
-          </Grid>
+          </Grid> */}
         </Grid>
         <Grid container style={{minHeight: '100vh'}} ref={refToScroll2}>
-            <Grid item xs={12} md={12} lg={12}>
-              <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
-            </Grid>
+            <Typography variant="h6" style={{width:"100%"}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
             <Map />
             <StateSelection />
         </Grid>
