@@ -22,8 +22,8 @@ html {
 }
 
 #dukeLogo {
-  height: 2rem;
-  margin-right: 2rem;
+  height: 3rem;
+  margin-right: 1rem;
 }
 
 .sm-icon {
@@ -34,6 +34,12 @@ html {
 @font-face {
   font-family: 'Factoria';
   src: local('Factoria'), url('./fonts/FactoriaUltra.otf');
+}
+
+#dukeLogoText {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1em;
+  /* font-weight: 500; */
 }
 
 .bold-cap {

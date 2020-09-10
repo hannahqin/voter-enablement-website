@@ -39,7 +39,7 @@ theme = responsiveFontSizes(theme);
 // main text and countdown text
 theme.typography.h3 = {
   [theme.breakpoints.down('sm')]: {
-    fontSize: '1.2rem',
+    fontSize: '1.5rem',
   },
   [theme.breakpoints.up('sm')]: {
     fontSize: '1.5rem',
@@ -55,7 +55,7 @@ theme.typography.h3 = {
 // share CTA
 theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
+    fontSize: '1.2rem',
   },
   [theme.breakpoints.up('sm')]: {
     fontSize: '1.2rem',
@@ -148,7 +148,7 @@ function App() {
             <Map />
             <StateSelection />
         </Grid>
-        <Grid container>
+        <Grid container style={{minHeight: '100vh'}}>
           <Grid container>
             <Commercial />
           </Grid>
