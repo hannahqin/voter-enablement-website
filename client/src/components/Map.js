@@ -43,8 +43,7 @@ const MapChart = (props) => {
                 key={geo.rsmKey}
                 stroke="#FFF"
                 geography={geo}
-                //===============================================change this line
-                fill={geo.properties.name === props.selectedState.state ? "blue" : "#DDD" }
+                fill={geo.properties.name === props.selectedState.state ? "#0577B1" : "#DDD" }
               />
             ))}
             {geographies.map(geo => {
