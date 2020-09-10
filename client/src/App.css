@@ -38,7 +38,6 @@ html {
 #dukeLogoText {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1em;
-  /* font-weight: 500; */
 }
 
 .bold-cap {
@@ -61,7 +60,7 @@ svg {
 
 #countdownActionContainer,
 #shareContainer {
-  background-color: black;
+  background-color: #011036;
   color: white;
 }
 
@@ -71,6 +70,16 @@ svg {
 #shareContainer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #mainTextContainer,
+  #countdownActionContainer,
+  #stateInfoContainer,
+  #shareContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 #countdownActionContainer,

@@ -39,7 +39,7 @@ theme = responsiveFontSizes(theme);
 // main text and countdown text
 theme.typography.h3 = {
   [theme.breakpoints.down('sm')]: {
-    fontSize: '1.2rem',
+    fontSize: '1.3rem',
   },
   [theme.breakpoints.up('sm')]: {
     fontSize: '1.5rem',
@@ -55,10 +55,10 @@ theme.typography.h3 = {
 // share CTA
 theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
+    fontSize: '1.2rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1.2rem',
+    fontSize: '1.4rem',
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '1.5rem',
@@ -148,7 +148,7 @@ function App() {
           </Grid> */}
         </Grid>
         <Grid container id="stateInfoContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
-            <Typography variant="h6" style={{width: '100%'}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
+            <Typography variant="h4" style={{width: '100%'}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
             <Map />
             <StateSelection />
         </Grid>
