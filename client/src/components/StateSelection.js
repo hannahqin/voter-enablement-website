@@ -41,7 +41,7 @@ export default function StateSelection() {
 
   return (
     <React.Fragment>
-      <Grid item xs={12} md={12} lg={6} xl={6} style={{ maxHeight: "30vh" }}>
+      <Grid item xs={12} md={12} lg={6} xl={6} style={{paddingBottom: "5rem"}}>
         <Autocomplete
           id="state-select"
           options={stateInfo}
