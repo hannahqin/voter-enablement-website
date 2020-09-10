@@ -36,24 +36,23 @@ theme = responsiveFontSizes(theme);
 // lg, large: 1280px
 // xl, extra-large: 1920px
 
+// main text and countdown text
 theme.typography.h3 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1.2rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '2rem',
+    fontSize: '1.5rem',
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '2rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '3rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '5rem',
-  },
+    fontSize: '2.5rem',
+  }
 };
 
+// share CTA
 theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '0.8rem',
@@ -66,10 +65,7 @@ theme.typography.h4 = {
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '2rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '3rem',
-  },
+  }
 };
 
 theme.typography.h6 = {
@@ -77,17 +73,14 @@ theme.typography.h6 = {
     fontSize: '1rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1.5rem',
+    fontSize: '1rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.2rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '2rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '4rem',
-  },
+    fontSize: '1.5rem',
+  }
 };
 
 theme.typography.body1 = {
@@ -102,10 +95,7 @@ theme.typography.body1 = {
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '1rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '2rem',
-  },
+  }
 };
 
 const callBackendAPI = async () => {
@@ -140,7 +130,7 @@ function App() {
         <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
-        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}} >
+        <Grid container style={{marginTop: "20vh", minHeight: '80vh'}} >
             <MainText />
             <grid item onClick={executeScrollTo1}>
               <VoteForText />
