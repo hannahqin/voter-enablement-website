@@ -15,7 +15,7 @@ import StateSelection from './components/StateSelection';
 import Commercial from './components/Commercial';
 import SocialMedia from './components/SocialMedia';
 import { spacing } from '@material-ui/system';
-
+import stateInfo from "./components/StateInfo.json";
 
 import './App.css';
 
@@ -112,6 +112,7 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 function App() {
   const classes=useStyles();
   const [apiTest, setAPITest] = useState({data: 'TEST'});
+  const [selState, setSelState] = useState(stateInfo[0]);
 
   const refToScroll1 = useRef(null)
   const refToScroll2 = useRef(null)
@@ -123,6 +124,11 @@ function App() {
       .then(res => setAPITest({ data: res.express }))
       .catch(err => console.log(err));
   }, []);
+
+  const changeState = (newState) => {
+    console.log('select state', newState);
+    setSelState(newState);
+  }
    
   return (
     <ThemeProvider theme={theme}>
@@ -148,9 +154,9 @@ function App() {
           </Grid> */}
         </Grid>
         <Grid container id="stateInfoContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
-            <Typography variant="h4" style={{width: '100%'}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
-            <Map />
-            <StateSelection />
+            <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
+            <Map selectedState={selState} />
+            <StateSelection changeState={changeState} selectedState={selState} />
         </Grid>
         <Grid container id="shareContainer" style={{minHeight: '100vh'}}>
           <Grid container>
