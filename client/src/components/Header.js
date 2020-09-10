@@ -18,11 +18,13 @@ function Header() {
     const classes=useStyles();
   return (
     <React.Fragment>
-        <Grid item style={{marginTop: "1em"}}>
-            <img src={dukeLogo} id="dukeLogo" />
-        </Grid>
-        <Grid item>
-            <Typography className={classes.root} id="dukeLogoText" style={{marginTop:"1em"}}>The Brotherhood Votes</Typography>
+        <Grid container justify="flex-start" alignItems="center">
+            <Grid item style={{marginTop: "1em"}}>
+                <img src={dukeLogo} id="dukeLogo" />
+            </Grid>
+            <Grid item>
+                <Typography className={classes.root} id="dukeLogoText" style={{marginTop:"1em"}}>The Brotherhood Votes</Typography>
+            </Grid>
         </Grid>
     </React.Fragment>
   );

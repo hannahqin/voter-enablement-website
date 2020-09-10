@@ -127,28 +127,32 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: '#012169'}} >
-        <Grid container direction="row" justify="flex-start" alignItems="center">
-          <Header />
-        </Grid>
-        <Grid container style={{marginTop: "20vh", minHeight: '80vh'}} >
+        <Grid container id="mainTextContainer" style={{height: '100vh'}}>
+          <Grid container direction="row" justify="flex-start" alignItems="flex-start">
+            <Header />
+          </Grid>
+          <Grid container alignItems="center">
             <MainText />
+          </Grid>
+          <Grid container alignItems="flex-end">
             <grid item onClick={executeScrollTo1}>
               <VoteForText />
             </grid>
+          </Grid>
         </Grid>
-        <Grid container style={{ minHeight: '100vh'}} ref={refToScroll1}>
+        <Grid container id="countdownActionContainer" style={{ minHeight: '100vh'}} ref={refToScroll1}>
           <Countdown />
           <ActionButtons />
           {/* <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
             <ArrowDropDownIcon style={{fontSize: '10em'}} />
           </Grid> */}
         </Grid>
-        <Grid container style={{minHeight: '100vh'}} ref={refToScroll2}>
-            <Typography variant="h6" style={{width:"100%"}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
+        <Grid container id="stateInfoContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
+            <Typography variant="h6" style={{width: '100%'}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
             <Map />
             <StateSelection />
         </Grid>
-        <Grid container style={{minHeight: '100vh'}}>
+        <Grid container id="shareContainer" style={{minHeight: '100vh'}}>
           <Grid container>
             <Commercial />
           </Grid>
