@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider, withTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Container from '@material-ui/core/Container';
@@ -115,10 +115,14 @@ const callBackendAPI = async () => {
   }
   return body;
 };
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
 
 function App() {
   const classes=useStyles();
   const [apiTest, setAPITest] = useState({data: 'TEST'});
+
+  const refToScroll1 = useRef(null)
+  const executeScrollTo1 = () => scrollToRef(refToScroll1)
 
   useEffect(() => {
     callBackendAPI()
@@ -132,11 +136,13 @@ function App() {
         <Grid container direction="row" justify="flex-start" alignItems="center">
           <Header />
         </Grid>
-        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}}>
+        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}} >
             <MainText />
-            <VoteForText />
+            <grid item onClick={executeScrollTo1}>
+              <VoteForText />
+            </grid>
         </Grid>
-        <Grid container style={{ minHeight: '100vh'}}>
+        <Grid container style={{ minHeight: '100vh'}} ref={refToScroll1}>
           <Countdown />
           <ActionButtons />
         </Grid>
