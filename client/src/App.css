@@ -16,8 +16,7 @@ html {
 }
 
 .button-container:hover {
-  /* color: #5b92ff; */
-  color: gray;
+  color: #E89923;
   cursor: pointer;
 }
 
@@ -31,10 +30,10 @@ html {
   font-size: '3em'
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Factoria';
   src: local('Factoria'), url('./fonts/FactoriaUltra.otf');
-}
+} */
 
 #dukeLogoText {
   font-family: 'Libre Franklin', sans-serif;
@@ -53,4 +52,37 @@ html {
 svg {
   display: inline-block;
   vertical-align: middle;
+}
+
+#outerContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#countdownActionContainer,
+#shareContainer {
+  background-color: black;
+  color: white;
+}
+
+#mainTextContainer,
+#countdownActionContainer,
+#stateInfoContainer,
+#shareContainer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#countdownActionContainer,
+#stateInfoContainer,
+#shareContainer {
+  padding-top: 5rem;
+}
+
+#mainTextContainer {
+  padding-bottom: 3rem;
+}
+
+#shareContainer {
+  padding-bottom: 1rem;
 }
