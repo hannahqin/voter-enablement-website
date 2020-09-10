@@ -144,7 +144,9 @@ function App() {
           </Grid>
         </Grid>
         <Grid container style={{minHeight: '100vh'}} ref={refToScroll2}>
-            <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
+            <Grid item xs={12} md={12} lg={12}>
+              <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
+            </Grid>
             <Map />
             <StateSelection />
         </Grid>
