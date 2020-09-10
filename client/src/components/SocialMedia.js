@@ -11,7 +11,7 @@ import '../App.css';
 function SocialMedia() {
   return (
     <React.Fragment>
-        <Grid item >
+        {/* <Grid item >
           <IconButton>
               <InstagramIcon className="sm-icon" />
           </IconButton>
@@ -25,7 +25,7 @@ function SocialMedia() {
             <IconButton>
               <FacebookIcon className="sm-icon" />
             </IconButton>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} md={12} lg={12} xl={12} >
           <Typography variant="body1" style={{textAlign:"center", margin:"0px", padding:"0px"}}>Your voice matters. Your vote matters.</Typography>
         </Grid>

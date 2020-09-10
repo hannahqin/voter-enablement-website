@@ -8,10 +8,10 @@ function Commercial() {
   return (
     <React.Fragment>
         <Grid item xs={12} md={12} lg={12}>
-          <Typography variant="h4">MAKE SURE YOUR FRIENDS ARE IN THE KNOW</Typography>
           <Typography variant="h4">SHARE #THEBROTHERHOODVOTES</Typography>
+          <Typography variant="h6" style={{ fontWeight: '300'}}>Make sure your friends are in the know</Typography>
         </Grid>
-        <Grid item xs={3} md={3} lg={3}></Grid>
+        <Grid item xs={3} md={2} lg={3}></Grid>
         <Grid item xs={12} md={8} lg={6} style={{marginTop: "5vh"}}>
           <ReactPlayer
             width="100%"  

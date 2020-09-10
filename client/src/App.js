@@ -36,40 +36,36 @@ theme = responsiveFontSizes(theme);
 // lg, large: 1280px
 // xl, extra-large: 1920px
 
+// main text and countdown text
 theme.typography.h3 = {
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '2.5rem',
+  }
+};
+
+// share CTA
+theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1.2rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '2rem',
+    fontSize: '1.4rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '2rem',
-  },
-  [theme.breakpoints.up('lg')]: {
-    fontSize: '3rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '5rem',
-  },
-};
-
-theme.typography.h4 = {
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '0.8rem',
-  },
-  [theme.breakpoints.up('sm')]: {
-    fontSize: '1rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1rem',
+    fontSize: '1.5rem',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '2rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '3rem',
-  },
+  }
 };
 
 theme.typography.h6 = {
@@ -77,17 +73,14 @@ theme.typography.h6 = {
     fontSize: '1rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1.5rem',
+    fontSize: '1rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.2rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '2rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '4rem',
-  },
+    fontSize: '1.5rem',
+  }
 };
 
 theme.typography.body1 = {
@@ -102,10 +95,7 @@ theme.typography.body1 = {
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '1rem',
-  },
-  [theme.breakpoints.up('xl')]: {
-    fontSize: '2rem',
-  },
+  }
 };
 
 const callBackendAPI = async () => {
@@ -143,28 +133,32 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: '#012169'}} >
-        <Grid container direction="row" justify="flex-start" alignItems="center">
-          <Header />
-        </Grid>
-        <Grid container style={{marginTop: "20vh", minHeight: '100vh'}} >
+        <Grid container id="mainTextContainer" style={{height: '100vh'}}>
+          <Grid container direction="row" justify="flex-start" alignItems="flex-start">
+            <Header />
+          </Grid>
+          <Grid container alignItems="center">
             <MainText />
+          </Grid>
+          <Grid container alignItems="flex-end">
             <grid item onClick={executeScrollTo1}>
               <VoteForText />
             </grid>
-        </Grid>
-        <Grid container style={{ minHeight: '100vh'}} ref={refToScroll1}>
-          <Countdown />
-          <ActionButtons />
-          <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
-            <ArrowDropDownIcon style={{fontSize: '10em'}} />
           </Grid>
         </Grid>
-        <Grid container style={{minHeight: '100vh'}} ref={refToScroll2}>
+        <Grid container id="countdownActionContainer" style={{ minHeight: '100vh'}} ref={refToScroll1}>
+          <Countdown />
+          <ActionButtons />
+          {/* <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
+            <ArrowDropDownIcon style={{fontSize: '10em'}} />
+          </Grid> */}
+        </Grid>
+        <Grid container id="stateInfoContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
             <Typography variant="h6">KNOW YOUR STATE'S VOTING DEADLINES</Typography>
             <Map selectedState={selState} />
             <StateSelection changeState={changeState} stateValue={selState} />
         </Grid>
-        <Grid container>
+        <Grid container id="shareContainer" style={{minHeight: '100vh'}}>
           <Grid container>
             <Commercial />
           </Grid>

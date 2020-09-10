@@ -1,6 +1,6 @@
 body {
   font-family: 'Libre Franklin', sans-serif;
-  background-color: #00539B;
+  background-color: #012169;
   color: white;
 }
 
@@ -12,16 +12,17 @@ html {
 .button-container {
   border-top: 1px solid white;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .button-container:hover {
-  color: #5b92ff;
+  color: #E89923;
   cursor: pointer;
 }
 
 #dukeLogo {
-  height: 1rem;
-  margin-right: 2rem;
+  height: 3rem;
+  margin-right: 1rem;
 }
 
 .sm-icon {
@@ -29,9 +30,14 @@ html {
   font-size: '3em'
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Factoria';
   src: local('Factoria'), url('./fonts/FactoriaUltra.otf');
+} */
+
+#dukeLogoText {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1em;
 }
 
 .bold-cap {
@@ -45,4 +51,59 @@ html {
 svg {
   display: inline-block;
   vertical-align: middle;
+}
+
+#outerContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#countdownActionContainer,
+#shareContainer {
+  background-color: #011036;
+  color: white;
+}
+
+#mainTextContainer,
+#countdownActionContainer,
+#stateInfoContainer,
+#shareContainer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #mainTextContainer,
+  #countdownActionContainer,
+  #stateInfoContainer,
+  #shareContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+#countdownActionContainer,
+#stateInfoContainer,
+#shareContainer {
+  padding-top: 5rem;
+}
+
+#mainTextContainer {
+  padding-bottom: 3rem;
+}
+
+#shareContainer {
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #state-select {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 960px) {
+  #state-select {
+    font-size: 2.5em;
+  }
 }
