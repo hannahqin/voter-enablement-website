@@ -15,7 +15,7 @@ import StateSelection from './components/StateSelection';
 import Commercial from './components/Commercial';
 import SocialMedia from './components/SocialMedia';
 import { spacing } from '@material-ui/system';
-import stateInfo from "./StateInfo.json";
+import stateInfo from "./components/StateInfo.json";
 
 import './App.css';
 
