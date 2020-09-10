@@ -16,7 +16,8 @@ html {
 }
 
 .button-container:hover {
-  color: #5b92ff;
+  /* color: #5b92ff; */
+  color: gray;
   cursor: pointer;
 }
 
