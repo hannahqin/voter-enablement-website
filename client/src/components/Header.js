@@ -7,23 +7,27 @@ import dukeLogo from "./dukeLogoWhite.png";
 
 import '../App.css';
 
-// const useStyles = makeStyles({
-//   root: {
-//     fontFamily: 'Factoria',
-//   },
-// });
+const useStyles = makeStyles({
+  root: {
+    fontFamily: "'Factoria' !important",
+    fontWeight: '700 !important',
+  },
+});
 
 
 function Header() {
-    // const classes=useStyles();
+  const classes=useStyles();
   return (
     <React.Fragment>
-        <Grid container justify="flex-start" alignItems="center">
-            <Grid item style={{marginTop: "1em"}}>
+        <Grid container direction="row" justify="flex-start" alignItems="center" style={{marginTop: "1em"}}>
+            <Grid item>
                 <img src={dukeLogo} id="dukeLogo" />
             </Grid>
             <Grid item>
-                <Typography variant="h6" id="dukeLogoText" style={{marginTop:"1em"}}>The Brotherhood Votes</Typography>
+              <Grid container direction="column" justify="center" alignItems="flex-start">
+                  <Typography variant="h5" id="dukeLogoText" className={classes.root}>THE BROTHERHOOD</Typography>
+                  <Typography variant="subtitle1" style={{marginTop:"0.1em"}}>Your Vote Matters</Typography>
+              </Grid>
             </Grid>
         </Grid>
     </React.Fragment>

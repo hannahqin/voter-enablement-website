@@ -26,14 +26,9 @@ html {
   font-size: '3em'
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Factoria';
-  src: local('Factoria'), url('./fonts/FactoriaUltra.otf');
-} */
-
-#dukeLogoText {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 1em;
+  src: local('Factoria'), url('./fonts/FactoriaUltra.otf') format('otf');
 }
 
 .bold-cap {

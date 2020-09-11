@@ -68,18 +68,19 @@ theme.typography.h4 = {
   }
 };
 
+// "THE BROTHERHOOD" header
 theme.typography.h5 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1rem',
+    fontSize: '1.1rem',
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '1.3rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.3rem',
   }
 };
 
@@ -99,20 +100,22 @@ theme.typography.h6 = {
   }
 };
 
-// theme.typography.body1 = {
-//   [theme.breakpoints.down('sm')]: {
-//     fontSize: '0.8rem',
-//   },
-//   [theme.breakpoints.up('sm')]: {
-//     fontSize: '0.8rem',
-//   },
-//   [theme.breakpoints.up('md')]: {
-//     fontSize: '0.8rem',
-//   },
-//   [theme.breakpoints.up('lg')]: {
-//     fontSize: '1rem',
-//   }
-// };
+// "your vote matters" in header
+theme.typography.subtitle1 = {
+  fontWeight: '300',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.6rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '0.7rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '0.8rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '0.8rem',
+  }
+};
 
 const callBackendAPI = async () => {
   const response = await fetch('/api/connected');
