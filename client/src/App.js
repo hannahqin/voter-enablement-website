@@ -86,6 +86,7 @@ theme.typography.h5 = {
 
 theme.typography.h6 = {
   lineHeight: '150%',
+  fontWeight: '100',
   [theme.breakpoints.down('sm')]: {
     fontSize: '0.9rem',
   },
