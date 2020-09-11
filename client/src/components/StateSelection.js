@@ -51,6 +51,7 @@ const StateTextField = withStyles({
       fontSize: '4em',
     },
     "& label": {
+      fontFamily: 'Libre Franklin !important',
       color: "white",
     },
     "& label.Mui-focused": {
