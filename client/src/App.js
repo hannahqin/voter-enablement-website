@@ -36,65 +36,84 @@ theme = responsiveFontSizes(theme);
 // lg, large: 1280px
 // xl, extra-large: 1920px
 
-// main text and countdown text
+// "what will you vote for" text and section headers
 theme.typography.h3 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1.3rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.6rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '2rem',
+    fontSize: '1.7rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '2.5rem',
+    fontSize: '2rem',
   }
 };
 
-// share CTA
+// "we vote for..." text
 theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
-    fontSize: '1.2rem',
+    fontSize: '1.1rem',
   },
   [theme.breakpoints.up('sm')]: {
     fontSize: '1.4rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.7rem',
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '2rem',
   }
 };
 
-theme.typography.h6 = {
+// "THE BROTHERHOOD" header
+theme.typography.h5 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '1rem',
+    fontSize: '1.1rem',
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.2rem',
+    fontSize: '1.3rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.3rem',
   }
 };
 
-theme.typography.body1 = {
+theme.typography.h6 = {
+  lineHeight: '150%',
   [theme.breakpoints.down('sm')]: {
-    fontSize: '0.8rem',
+    fontSize: '0.9rem',
   },
   [theme.breakpoints.up('sm')]: {
-    fontSize: '0.8rem',
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '1.1rem',
+  }
+};
+
+// "your vote matters" in header
+theme.typography.subtitle1 = {
+  fontWeight: '300',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.6rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '0.7rem',
   },
   [theme.breakpoints.up('md')]: {
     fontSize: '0.8rem',
   },
   [theme.breakpoints.up('lg')]: {
-    fontSize: '1rem',
+    fontSize: '0.8rem',
   }
 };
 
@@ -133,38 +152,35 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container id="outerContainer" maxWidth={false} style={{color: 'white', backgroundColor: '#012169'}} >
-        <Grid container id="mainTextContainer" style={{height: '100vh'}}>
+        <Grid container 
+          id="mainTextContainer"
+          className="sectionContainer"
+          justify="space-between"
+          style={{height: '100vh'}}
+        >
           <Grid container direction="row" justify="flex-start" alignItems="flex-start">
             <Header />
           </Grid>
           <Grid container alignItems="center">
             <MainText />
           </Grid>
-          <Grid container alignItems="flex-end">
-            <grid item onClick={executeScrollTo1}>
-              <VoteForText />
-            </grid>
+          <Grid container direction="column" justify="flex-end" alignItems="flex-start">
+            <VoteForText />
+            <ActionButtons />
           </Grid>
         </Grid>
-        <Grid container id="countdownActionContainer" style={{ minHeight: '100vh'}} ref={refToScroll1}>
-          <Countdown />
-          <ActionButtons />
-          {/* <Grid item onClick={executeScrollTo2} style={{cursor: "pointer"}}>
-            <ArrowDropDownIcon style={{fontSize: '10em'}} />
-          </Grid> */}
-        </Grid>
-        <Grid container id="stateInfoContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
-            <Typography variant="h4" style={{width: '100%'}}>KNOW YOUR STATE'S VOTING DEADLINES</Typography>
+        <Grid container id="stateInfoContainer" className="sectionContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
+            <Countdown />
             <Map selectedState={selState} />
             <StateSelection changeState={changeState} selectedState={selState} />
         </Grid>
-        <Grid container id="shareContainer" style={{minHeight: '100vh'}}>
+        <Grid container id="shareContainer" className="sectionContainer" style={{minHeight: '100vh'}}>
           <Grid container>
             <Commercial />
           </Grid>
           <Grid container 
-            direction="row"
-            justify="center"
+            direction="column"
+            justify="flex-end"
             alignItems="center"
             style={{marginTop: '4em'}}>
             <SocialMedia  />

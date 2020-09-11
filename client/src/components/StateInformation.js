@@ -9,7 +9,6 @@ const useStyles = makeStyles({
       fontFamily: 'Libre Franklin !important',
       fontWeight: '100 !important',
       marginLeft: '0.5rem',
-      marginBottom: '0.5rem',
     },
   });
 
@@ -18,15 +17,15 @@ export default function StateInformation(props) {
 
   return (
     <React.Fragment>
-        <Grid item style={{marginBottom: '2em', marginTop: '3em'}}>
+        <Grid item style={{marginBottom: '1em', marginTop: '1.5em'}}>
             <Typography variant="h6" className={classes.root} > Voter Registration Deadline</Typography>
             <Typography variant="h6" className={classes.root}><strong>{props.selectedState.vrd_inperson}</strong></Typography>
         </Grid>
-        <Grid item style={{marginBottom: '2em'}}>
+        <Grid item style={{marginBottom: '1em'}}>
             <Typography variant="h6" className={classes.root}> Absentee Application Deadline</Typography>
             <Typography variant="h6" className={classes.root}><strong>{props.selectedState.abs_app}</strong></Typography>
         </Grid>
-        <Grid item style={{marginBottom: '2em'}}>
+        <Grid item style={{marginBottom: '1em'}}>
             <Typography variant="h6" className={classes.root}> Early Voting</Typography>
             <Typography variant="h6" className={classes.root}><strong>{props.selectedState.abs_early}</strong></Typography>
         </Grid>
