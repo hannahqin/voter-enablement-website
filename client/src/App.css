@@ -10,14 +10,10 @@ html {
 }
 
 .button-container {
-  border-top: 1px solid white;
+  border: 1px solid white;
+  border-radius: 4px;
   cursor: pointer;
   padding-top: 10px;
-}
-
-.button-container:hover {
-  color: #0577B1;
-  cursor: pointer;
 }
 
 #dukeLogo {
@@ -58,25 +54,13 @@ svg {
   padding-right: 0;
 }
 
-#countdownActionContainer,
-#shareContainer {
-  background-color: #011036;
-  color: white;
-}
-
-#mainTextContainer,
-#countdownActionContainer,
-#stateInfoContainer,
-#shareContainer {
+.sectionContainer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
 @media (max-width: 600px) {
-  #mainTextContainer,
-  #countdownActionContainer,
-  #stateInfoContainer,
-  #shareContainer {
+  .sectionContainer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -88,12 +72,9 @@ svg {
   padding-top: 5rem;
 }
 
-#mainTextContainer {
-  padding-bottom: 3rem;
-}
-
+#mainTextContainer,
 #shareContainer {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 600px) {

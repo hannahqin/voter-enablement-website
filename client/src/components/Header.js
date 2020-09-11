@@ -7,15 +7,15 @@ import dukeLogo from "./dukeLogoWhite.png";
 
 import '../App.css';
 
-const useStyles = makeStyles({
-    root: {
-      fontFamily: 'Factoria',
-    },
-  });
+// const useStyles = makeStyles({
+//   root: {
+//     fontFamily: 'Factoria',
+//   },
+// });
 
 
 function Header() {
-    const classes=useStyles();
+    // const classes=useStyles();
   return (
     <React.Fragment>
         <Grid container justify="flex-start" alignItems="center">
@@ -23,7 +23,7 @@ function Header() {
                 <img src={dukeLogo} id="dukeLogo" />
             </Grid>
             <Grid item>
-                <Typography className={classes.root} id="dukeLogoText" style={{marginTop:"1em"}}>The Brotherhood Votes</Typography>
+                <Typography variant="h6" id="dukeLogoText" style={{marginTop:"1em"}}>The Brotherhood Votes</Typography>
             </Grid>
         </Grid>
     </React.Fragment>

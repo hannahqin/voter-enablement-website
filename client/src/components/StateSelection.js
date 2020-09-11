@@ -46,6 +46,7 @@ const StateTextField = withStyles({
       borderBottom: 0,
     },
     "& input": {
+      fontFamily: 'Libre Franklin !important',
       color: "white",
       fontSize: '4em',
     },
@@ -65,7 +66,7 @@ export default function StateSelection(props) {
 
   return (
     <React.Fragment>
-      <Grid item xs={12} md={12} lg={6} xl={6} style={{paddingBottom: "5rem"}}>
+      <Grid item xs={12} md={12} lg={6} xl={6}>
         <Autocomplete
           id="state-select"
           classes={classes}
