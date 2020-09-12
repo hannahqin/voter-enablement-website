@@ -68,10 +68,12 @@ svg {
   }
 }
 
-#countdownActionContainer,
-#stateInfoContainer,
+#stateInfoContainer {
+  padding-top: 3rem;
+}
+
 #shareContainer {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 #mainTextContainer,
