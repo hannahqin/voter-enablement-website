@@ -75,8 +75,10 @@ export default function StateSelection(props) {
           getOptionLabel={(option) => option.state}
           value={props.selectedState}
           onChange={(event, newInputValue) => {
-            props.changeState(newInputValue)}
-          }
+            props.changeState(newInputValue);
+            let str = "#" + newInputValue.state;
+            window.location = str.replace(/\s+/g, '');
+          }}
           inputValue={inputValue}
           onInputChange={(event, newInputValue) => {
             setInputValue(newInputValue);
