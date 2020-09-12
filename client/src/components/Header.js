@@ -9,7 +9,7 @@ import '../App.css';
 
 const useStyles = makeStyles({
   root: {
-    fontFamily: "'Factoria' !important",
+    fontFamily: "'Factoria-Bold' !important",
     fontWeight: '700 !important',
   },
 });
