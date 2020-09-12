@@ -48,7 +48,6 @@ const StateTextField = withStyles({
     "& input": {
       fontFamily: 'Libre Franklin !important',
       color: "white",
-      fontSize: '4em',
     },
     "& label": {
       fontFamily: 'Libre Franklin !important',
