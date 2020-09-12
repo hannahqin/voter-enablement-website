@@ -35,11 +35,8 @@ const useStyles = makeStyles({
 
 const PrimaryButton = withStyles((theme) => ({
   root: {
-    color: '#011036',
-    backgroundColor: '#FFFFFF',
-    '&:hover': {
-      backgroundColor: '#DDDDDD',
-    },
+    color: '#FFFFFF',
+    backgroundColor: '#385EB5',
     paddingLeft: '1.5rem',
     paddingRight: '1.5em',
     marginBottom: '1rem',
@@ -49,7 +46,7 @@ const PrimaryButton = withStyles((theme) => ({
 const TertiaryButton = withStyles((theme) => ({
   root: {
     color: '#FFFFFF',
-    borderColor: '#FFFFFF',
+    borderColor: 'rgba(255, 255, 255, 0.5)',
     '&:hover': {
       color: '#DDDDDD',
       backgroundColor: 'rgba(0,0,0,0.1)',
@@ -77,7 +74,7 @@ function ActionButtons() {
   return (
     <React.Fragment>
         <Grid container direction="row" justify="flex-start" alignItems="flex-start">
-          <PrimaryButton variant="contained" className="button-container" style={{marginRight:"1.5em"}}
+          <PrimaryButton variant="contained" color="primary" className="button-container" style={{marginRight:"1.5em"}}
             onClick={() => {
             setShowModal(true);
             setActionType('reg');
