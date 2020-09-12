@@ -43,7 +43,7 @@ const PrimaryButton = withStyles((theme) => ({
   },
 }))(Button);
 
-const TertiaryButton = withStyles((theme) => ({
+const SecondaryButton = withStyles((theme) => ({
   root: {
     color: '#FFFFFF',
     borderColor: 'rgba(255, 255, 255, 0.5)',
@@ -74,7 +74,7 @@ function ActionButtons() {
   return (
     <React.Fragment>
         <Grid container direction="row" justify="flex-start" alignItems="flex-start">
-          <PrimaryButton variant="contained" color="primary" className="button-container" style={{marginRight:"1.5em"}}
+          <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
             onClick={() => {
             setShowModal(true);
             setActionType('reg');
@@ -82,7 +82,7 @@ function ActionButtons() {
           >
             <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Register to Vote</Typography>
           </PrimaryButton>
-          <PrimaryButton variant="contained" color="primary" className="button-container" style={{marginRight:"1.5em"}}
+          <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
             onClick={() => {
               setShowModal(true);
               setActionType('ab');
@@ -90,14 +90,14 @@ function ActionButtons() {
           >
             <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Request Absentee Ballot</Typography>
           </PrimaryButton>
-          <TertiaryButton variant="outlined" className="button-container" style={{marginRight:"1.5em"}}
+          <SecondaryButton variant="outlined" style={{marginRight:"1.5em"}}
             onClick={() => {
               setShowModal(true);
               setActionType('cr');
             }}
           >
             <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Check Registration Status</Typography>
-          </TertiaryButton>
+          </SecondaryButton>
         </Grid>
           
         { showModal ? ( 
