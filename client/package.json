@@ -16,7 +16,8 @@
     "react-dom": "^16.13.1",
     "react-player": "^2.6.1",
     "react-scripts": "^3.4.3",
-    "react-simple-maps": "^2.1.2"
+    "react-simple-maps": "^2.1.2",
+    "react-text-loop": "^2.3.0"
   },
   "scripts": {
     "dev-start": "react-scripts start",

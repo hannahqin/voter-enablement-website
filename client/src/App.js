@@ -52,7 +52,6 @@ theme.typography.h3 = {
   }
 };
 
-// "we vote for..." text
 theme.typography.h4 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1.1rem',
@@ -162,10 +161,10 @@ function App() {
           <Grid container direction="row" justify="flex-start" alignItems="flex-start">
             <Header />
           </Grid>
-          <Grid container alignItems="center">
+          <Grid container alignItems="flex-start" style={{height: '20vh', marginTop:'5rem'}}>
             <MainText />
           </Grid>
-          <Grid container direction="column" justify="flex-end" alignItems="flex-start">
+          <Grid container direction="column" justify="center" alignItems="flex-start">
             <VoteForText />
             <ActionButtons />
           </Grid>

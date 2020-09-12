@@ -76,7 +76,10 @@ svg {
   padding-top: 4rem;
 }
 
-#mainTextContainer,
+#mainTextContainer {
+  padding-bottom: 4rem;
+}
+
 #shareContainer {
   padding-bottom: 2rem;
 }
