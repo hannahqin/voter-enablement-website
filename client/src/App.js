@@ -169,7 +169,11 @@ function App() {
             <ActionButtons />
           </Grid>
         </Grid>
-        <Grid container id="stateInfoContainer" className="sectionContainer" ref={refToScroll2}>
+        <Grid container 
+          justify="space-around"
+          id="stateInfoContainer" 
+          className="sectionContainer" 
+          ref={refToScroll2}>
             <Countdown />
             <Map selectedState={selState} />
             <StateSelection changeState={changeState} selectedState={selState} />
