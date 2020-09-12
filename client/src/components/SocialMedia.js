@@ -11,21 +11,23 @@ import '../App.css';
 function SocialMedia() {
   return (
     <React.Fragment>
-        {/* <Grid item >
-          <IconButton>
-              <InstagramIcon className="sm-icon" />
-          </IconButton>
-        </Grid>
-        <Grid item>
-          <IconButton>
-            <TwitterIcon className="sm-icon" />
-          </IconButton>
-        </Grid>
-        <Grid item>
-            <IconButton>
-              <FacebookIcon className="sm-icon" />
+        <Grid container justify="center">
+          <Grid item>
+            <IconButton href="https://www.instagram.com/dukembb" target="_blank">
+                <InstagramIcon className="sm-icon" />
             </IconButton>
-        </Grid> */}
+          </Grid>
+          <Grid item>
+            <IconButton href="https://twitter.com/dukembb" target="_blank">
+              <TwitterIcon className="sm-icon" />
+            </IconButton>
+          </Grid>
+          <Grid item>
+              <IconButton href="https://www.facebook.com/DukeMBB" target="_blank">
+                <FacebookIcon className="sm-icon" />
+              </IconButton>
+          </Grid>
+        </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
           <Typography variant="h6" style={{textAlign:"center"}}>Your voice matters. Your vote matters.</Typography>
         </Grid>
