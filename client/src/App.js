@@ -159,8 +159,9 @@ function App() {
           justify="space-between"
           style={{height: '100vh'}}
         >
-          <Grid container direction="row" justify="flex-start" alignItems="flex-start">
-            <Header />
+          <Grid container direction="row" justify="flex-start" alignItems="flex-start"
+          style={{height: '-1000vh'}} >
+            <Header style={{height: '-1000vh'}}/>
           </Grid>
           <Grid container alignItems="center">
             <MainText />
