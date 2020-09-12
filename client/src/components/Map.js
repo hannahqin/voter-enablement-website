@@ -56,7 +56,7 @@ const MapChart = (props) => {
                     centroid[0] < -67 &&
                     (Object.keys(offsets).indexOf(cur.id) === -1 ? (
                       <Marker coordinates={centroid} onClick={logId(cur.id)}>
-                        <text y="2" fontSize={14} textAnchor="middle">
+                        <text y="2" fill="#2B2B2B" fontSize={14} textAnchor="middle">
                           {cur.id}
                         </text>
                       </Marker>
@@ -66,7 +66,7 @@ const MapChart = (props) => {
                         dx={offsets[cur.id][0]}
                         dy={offsets[cur.id][1]}
                       >
-                        <text x={4} fontSize={14} alignmentBaseline="middle">
+                        <text x={4} fill="white" fontSize={14} alignmentBaseline="middle">
                           {cur.id}
                         </text>
                       </Annotation>
