@@ -170,12 +170,12 @@ function App() {
             <ActionButtons />
           </Grid>
         </Grid>
-        <Grid container id="stateInfoContainer" className="sectionContainer" style={{minHeight: '100vh'}} ref={refToScroll2}>
+        <Grid container id="stateInfoContainer" className="sectionContainer" ref={refToScroll2}>
             <Countdown />
             <Map selectedState={selState} />
             <StateSelection changeState={changeState} selectedState={selState} />
         </Grid>
-        <Grid container id="shareContainer" className="sectionContainer" style={{minHeight: '100vh'}}>
+        <Grid container id="shareContainer" className="sectionContainer">
           <Grid container>
             <Commercial />
           </Grid>
