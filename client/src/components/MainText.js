@@ -55,7 +55,7 @@ export function VoteForText() {
         <React.Fragment>
             <Grid item xs={12} md={12} lg={12} style={{flexBasis: 'auto', paddingBottom: '1.2em'}}>
                 <Typography variant="h3"><strong>WHAT WILL YOU VOTE FOR?</strong></Typography>
-                <Typography variant="h6" className={classes.root}>Let's make sure your vote counts <span><ArrowDropDownIcon style={{fontSize: "1em"}}/></span></Typography>
+                <Typography variant="h6">Let's make sure your vote counts <span><ArrowDropDownIcon style={{fontSize: "1em"}}/></span></Typography>
             </Grid>
         </React.Fragment>
     )

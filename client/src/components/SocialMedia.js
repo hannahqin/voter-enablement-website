@@ -27,10 +27,10 @@ function SocialMedia() {
             </IconButton>
         </Grid> */}
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
-          <Typography variant="h6" style={{textAlign:"center", fontWeight:'300'}}>Your voice matters. Your vote matters.</Typography>
+          <Typography variant="h6" style={{textAlign:"center"}}>Your voice matters. Your vote matters.</Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
-          <Typography variant="h6" style={{textAlign:"center"}}><strong>You can make the difference.</strong></Typography>
+          <Typography variant="h6" style={{textAlign:"center", fontWeight:'500'}}>You can make the difference.</Typography>
         </Grid>
     </React.Fragment>
   );

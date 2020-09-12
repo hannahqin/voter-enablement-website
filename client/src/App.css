@@ -27,8 +27,15 @@ html {
 }
 
 @font-face {
-  font-family: 'Factoria';
-  src: local('Factoria'), url('./fonts/FactoriaUltra.otf') format('otf');
+  font-family: "Factoria-Bold";
+  src: url("./fonts/FactoriaBold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/FactoriaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/FactoriaBold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/FactoriaBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/FactoriaBold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/FactoriaBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
 
 .bold-cap {
