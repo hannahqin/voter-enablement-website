@@ -176,7 +176,6 @@ function App() {
           ref={refToScroll2}>
             <Countdown />
             <Map selectedState={selState} />
-            
             <StateSelection changeState={changeState} selectedState={selState} />
         </Grid>
         <Grid container id="shareContainer" className="sectionContainer">

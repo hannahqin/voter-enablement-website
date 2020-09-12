@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
+import Link from '@material-ui/core/Link';
 
 import '../App.css';
 
@@ -74,30 +75,36 @@ function ActionButtons() {
   return (
     <React.Fragment>
         <Grid container direction="row" justify="flex-start" alignItems="flex-start">
-          <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
-            onClick={() => {
-            setShowModal(true);
-            setActionType('reg');
-            }}
-          >
-            <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Register to Vote</Typography>
-          </PrimaryButton>
-          <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
-            onClick={() => {
+          <Link href="#register">
+            <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
+              onClick={() => {
               setShowModal(true);
-              setActionType('ab');
-            }} 
-          >
-            <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Request Absentee Ballot</Typography>
-          </PrimaryButton>
-          <SecondaryButton variant="outlined" style={{marginRight:"1.5em"}}
-            onClick={() => {
-              setShowModal(true);
-              setActionType('cr');
-            }}
-          >
-            <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Check Registration Status</Typography>
-          </SecondaryButton>
+              setActionType('reg');
+              }}
+            >
+              <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Register to Vote</Typography>
+            </PrimaryButton>
+          </Link>
+          <Link href="#requestabsentee">
+            <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
+              onClick={() => {
+                setShowModal(true);
+                setActionType('ab');
+              }} 
+            >
+              <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Request Absentee Ballot</Typography>
+            </PrimaryButton>
+          </Link>
+          <Link href="#checkregistration">
+            <SecondaryButton variant="outlined" style={{marginRight:"1.5em"}}
+              onClick={() => {
+                setShowModal(true);
+                setActionType('cr');
+              }}
+            >
+              <Typography variant="h6" className={classes.root} style={{textTransform:'none'}}>Check Registration Status</Typography>
+            </SecondaryButton>
+          </Link>
         </Grid>
           
         { showModal ? ( 
