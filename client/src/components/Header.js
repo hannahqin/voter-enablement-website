@@ -12,6 +12,11 @@ const useStyles = makeStyles({
     fontFamily: "'Factoria-Bold' !important",
     fontWeight: '700 !important',
   },
+  header: {
+    position: "fixed",
+    background: "#012169",
+    zIndex: "10",
+  }
 });
 
 
@@ -19,8 +24,8 @@ function Header() {
   const classes=useStyles();
   return (
     <React.Fragment>
-        <Grid container direction="row" justify="flex-start" alignItems="center" style={{marginTop: "1em"}}>
-            <Grid item>
+        <Grid container className={classes.header} direction="row" justify="flex-start" alignItems="center" style={{marginTop: "0.0em"}}>
+            <Grid item style={{marginTop: "0.8em"}}>
                 <img src={dukeLogo} id="dukeLogo" />
             </Grid>
             <Grid item>
