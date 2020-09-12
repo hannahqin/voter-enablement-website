@@ -18,7 +18,7 @@ export default function StateInformation(props) {
   return (
     <React.Fragment>
         <Grid item style={{marginBottom: '1em', marginTop: '1.5em'}}>
-            <Typography variant="h6" className={classes.root}><strong>Showing deadlines for {props.selectedState.state}:</strong></Typography>
+            <Typography variant="h6" className={classes.root}><strong>Dates and deadlines for {props.selectedState.state}:</strong></Typography>
         </Grid>
         <Grid item style={{marginBottom: '1em', marginTop: '1em'}}>
             <Typography variant="h6" className={classes.root}>Voter Registration Deadline</Typography>
