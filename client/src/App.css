@@ -9,13 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.button-container {
-  border: 1px solid white;
-  border-radius: 4px;
-  cursor: pointer;
-  padding-top: 10px;
-}
-
 #dukeLogo {
   height: 3rem;
   margin-right: 1rem;
@@ -51,6 +44,7 @@ svg {
   vertical-align: middle;
 }
 
+/* === LEFT & RIGHT PADDING ON PAGE === */
 #outerContainer {
   padding-left: 0;
   padding-right: 0;
@@ -68,22 +62,43 @@ svg {
   }
 }
 
-#stateInfoContainer {
-  padding-top: 3rem;
-}
-
-#shareContainer {
-  padding-top: 4rem;
-}
-
+/* === TOP & BOTTOM PADDING ON SECTION CONTAINERS === */
 #mainTextContainer {
   padding-bottom: 3rem;
 }
 
+#stateInfoContainer {
+  padding-top: 2rem;
+}
+
+@media (max-width: 960px) {
+  #mainTextContainer {
+    padding-bottom: 4.5rem;
+  }
+
+  #stateInfoContainer {
+    padding-top: 1rem;
+  }
+}
+
 #shareContainer {
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
+/* === TEXT LOOP POSITIONING === */
+#textLoopContainer {
+  height: 20vh;
+  margin-top: 10rem;
+}
+
+@media (max-width: 600px) {
+  #textLoopContainer {
+    margin-top: 7rem;
+  }
+}
+
+/* === DROPDOWN FONT STYLING === */
 @media (max-width: 600px) {
   #state-select {
     font-size: 2em;
