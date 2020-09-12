@@ -24,7 +24,7 @@ function Header() {
   const classes=useStyles();
   return (
     <React.Fragment>
-        <Grid container className={classes.header} direction="row" justify="flex-start" alignItems="center" style={{marginTop: "0.0em"}}>
+        <Grid container className={classes.header} direction="row" justify="flex-start" alignItems="center">
             <Grid item style={{marginTop: "0.8em"}}>
                 <img src={dukeLogo} id="dukeLogo" />
             </Grid>
