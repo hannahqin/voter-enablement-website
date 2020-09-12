@@ -161,7 +161,7 @@ function App() {
           <Grid container direction="row" justify="flex-start" alignItems="flex-start">
             <Header />
           </Grid>
-          <Grid container alignItems="flex-start" style={{height: '20vh', marginTop:'5rem'}}>
+          <Grid container alignItems="flex-start" style={{height: '20vh', marginTop:'10rem'}}>
             <MainText />
           </Grid>
           <Grid container direction="column" justify="center" alignItems="flex-start">
