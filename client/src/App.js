@@ -37,7 +37,23 @@ theme = responsiveFontSizes(theme);
 // lg, large: 1280px
 // xl, extra-large: 1920px
 
-// "what will you vote for" text and section headers
+// "THE BROTHERHOOD" header
+theme.typography.h1 = {
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '1.1rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '1.3rem',
+  }
+};
+
+// "what will you vote for?" and section headings
 theme.typography.h3 = {
   [theme.breakpoints.down('sm')]: {
     fontSize: '1.3rem',
@@ -53,38 +69,9 @@ theme.typography.h3 = {
   }
 };
 
+// Sub-headings beneath h3 headings 
+// (e.g. "Make sure your friends are in the know")
 theme.typography.h4 = {
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1.1rem',
-  },
-  [theme.breakpoints.up('sm')]: {
-    fontSize: '1.4rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.7rem',
-  },
-  [theme.breakpoints.up('lg')]: {
-    fontSize: '2rem',
-  }
-};
-
-// "THE BROTHERHOOD" header
-theme.typography.h5 = {
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
-  },
-  [theme.breakpoints.up('sm')]: {
-    fontSize: '1.1rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.3rem',
-  },
-  [theme.breakpoints.up('lg')]: {
-    fontSize: '1.3rem',
-  }
-};
-
-theme.typography.h6 = {
   lineHeight: '150%',
   fontWeight: '100',
   [theme.breakpoints.down('sm')]: {
@@ -105,7 +92,7 @@ theme.typography.h6 = {
 theme.typography.subtitle1 = {
   fontWeight: '300',
   [theme.breakpoints.down('sm')]: {
-    fontSize: '0.6rem',
+    fontSize: '0.7rem',
   },
   [theme.breakpoints.up('sm')]: {
     fontSize: '0.7rem',
@@ -115,6 +102,25 @@ theme.typography.subtitle1 = {
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: '0.8rem',
+  }
+};
+
+// "Your voice matters ..." in footer
+theme.typography.body1 = {
+  lineHeight: '150%',
+  fontWeight: '100',
+  textAlign: 'center',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.8rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '0.9rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '0.9rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '1rem',
   }
 };
 

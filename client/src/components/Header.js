@@ -30,7 +30,7 @@ function Header() {
             </Grid>
             <Grid item>
               <Grid container direction="column" justify="center" alignItems="flex-start">
-                  <Typography variant="h5" id="dukeLogoText" className={classes.root}>THE BROTHERHOOD</Typography>
+                  <Typography variant="h1" id="dukeLogoText" className={classes.root}>THE BROTHERHOOD</Typography>
                   <Typography variant="subtitle1" style={{marginTop:"0.1em"}}>Your Vote Matters</Typography>
               </Grid>
             </Grid>
