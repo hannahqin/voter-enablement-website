@@ -99,6 +99,9 @@ svg {
 }
 
 /* === DROPDOWN FONT STYLING === */
+#state-select {
+  font-size: 3em;
+}
 @media (max-width: 600px) {
   #state-select {
     font-size: 2em;
