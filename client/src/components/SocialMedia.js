@@ -13,19 +13,19 @@ function SocialMedia() {
     <React.Fragment>
         <Grid container justify="center">
           <Grid item>
-            <IconButton href="https://www.instagram.com/dukembb" target="_blank">
-                <InstagramIcon className="sm-icon" />
-            </IconButton>
-          </Grid>
-          <Grid item>
-            <IconButton href="https://twitter.com/dukembb" target="_blank">
+            <IconButton href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thebrotherhoodvotes.us&text=I'm%20ready%20to%20vote.%20Are%20you%3F%20" target="_blank">
               <TwitterIcon className="sm-icon" />
             </IconButton>
           </Grid>
           <Grid item>
-              <IconButton href="https://www.facebook.com/DukeMBB" target="_blank">
+              <IconButton href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thebrotherhoodvotes.us" target="_blank">
                 <FacebookIcon className="sm-icon" />
               </IconButton>
+          </Grid>
+          <Grid item>
+            <IconButton href="https://www.instagram.com/dukembb" target="_blank">
+                <InstagramIcon className="sm-icon" />
+            </IconButton>
           </Grid>
         </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
