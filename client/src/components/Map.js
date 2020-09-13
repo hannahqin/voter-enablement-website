@@ -28,10 +28,6 @@ const offsets = {
 };
 
 const MapChart = (props) => {
-  const logId = (id) => {
-    console.log("ID", id);
-  }
-  
   return (
     <Grid item xs={12} sm={8} md={8} lg={6} xl={6} style={{padding: '0em 2em'}}>
     <ComposableMap projection="geoAlbersUsa">
@@ -55,7 +51,7 @@ const MapChart = (props) => {
                     centroid[0] > -160 &&
                     centroid[0] < -67 &&
                     (Object.keys(offsets).indexOf(cur.id) === -1 ? (
-                      <Marker coordinates={centroid} onClick={logId(cur.id)}>
+                      <Marker coordinates={centroid}>
                         <text y="2" fill="#2B2B2B" fontSize={14} textAnchor="middle">
                           {cur.id}
                         </text>

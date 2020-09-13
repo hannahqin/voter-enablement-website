@@ -16,6 +16,7 @@ import Commercial from './components/Commercial';
 import SocialMedia from './components/SocialMedia';
 import { spacing } from '@material-ui/system';
 import stateInfo from "./components/StateInfo.json";
+import ReactGA from 'react-ga';
 
 import './App.css';
 
@@ -129,6 +130,10 @@ const callBackendAPI = async () => {
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
 
 function App() {
+  // initialize Google Analytics
+  ReactGA.initialize('UA-176303581-1');
+  ReactGA.pageview('/');
+
   const classes=useStyles();
   const [apiTest, setAPITest] = useState({data: 'TEST'});
   const [selState, setSelState] = useState(stateInfo[0]);
