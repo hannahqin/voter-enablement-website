@@ -53,41 +53,6 @@ theme.typography.h1 = {
   }
 };
 
-// "what will you vote for?" and section headings
-theme.typography.h3 = {
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1.3rem',
-  },
-  [theme.breakpoints.up('sm')]: {
-    fontSize: '1.6rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.7rem',
-  },
-  [theme.breakpoints.up('lg')]: {
-    fontSize: '2rem',
-  }
-};
-
-// Sub-headings beneath h3 headings 
-// (e.g. "Make sure your friends are in the know")
-theme.typography.h4 = {
-  lineHeight: '150%',
-  fontWeight: '100',
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '0.9rem',
-  },
-  [theme.breakpoints.up('sm')]: {
-    fontSize: '1rem',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1rem',
-  },
-  [theme.breakpoints.up('lg')]: {
-    fontSize: '1.1rem',
-  }
-};
-
 // "your vote matters" in header
 theme.typography.subtitle1 = {
   fontWeight: '300',
@@ -105,8 +70,60 @@ theme.typography.subtitle1 = {
   }
 };
 
-// "Your voice matters ..." in footer
+// "what will you vote for?" and section headings
+theme.typography.h3 = {
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '1.6rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.7rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '2rem',
+  }
+};
+
+// "Dates and Deadlines for [stateName]"
+theme.typography.h4 = {
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1.1rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '1.2rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.2rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '1.3rem',
+  }
+};
+
+// Text beneath h3 headings (e.g. "Make sure your friends are in the know")
+// Text on action buttons
+// State dates/deadlines info
 theme.typography.body1 = {
+  lineHeight: '150%',
+  fontWeight: '100',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '0.9rem',
+  },
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '1.1rem',
+  }
+};
+
+// "Your voice matters ..." in footer
+theme.typography.body2 = {
   lineHeight: '150%',
   fontWeight: '100',
   textAlign: 'center',

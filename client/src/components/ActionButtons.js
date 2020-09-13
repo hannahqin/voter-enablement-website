@@ -85,7 +85,7 @@ function ActionButtons() {
               });
             }}
           >
-            <Typography variant="h4" className={classes.root} style={{textTransform:'none'}}>Register to Vote</Typography>
+            <Typography variant="body1" className={classes.root} style={{textTransform:'none'}}>Register to Vote</Typography>
           </PrimaryButton>
           <PrimaryButton variant="contained" color="primary" style={{marginRight:"1.5em"}}
             onClick={() => {
@@ -97,7 +97,7 @@ function ActionButtons() {
               });
             }} 
           >
-            <Typography variant="h4" className={classes.root} style={{textTransform:'none'}}>Request Absentee Ballot</Typography>
+            <Typography variant="body1" className={classes.root} style={{textTransform:'none'}}>Request Absentee Ballot</Typography>
           </PrimaryButton>
           <SecondaryButton variant="outlined" style={{marginRight:"1.5em"}}
             onClick={() => {
@@ -109,7 +109,7 @@ function ActionButtons() {
               });
             }}
           >
-            <Typography variant="h4" className={classes.root} style={{textTransform:'none'}}>Check Registration Status</Typography>
+            <Typography variant="body1" className={classes.root} style={{textTransform:'none'}}>Check Registration Status</Typography>
           </SecondaryButton>
         </Grid>
           

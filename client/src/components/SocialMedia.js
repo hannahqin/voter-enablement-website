@@ -29,10 +29,10 @@ function SocialMedia() {
           </Grid>
         </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
-          <Typography variant="body1">Your voice matters. Your vote matters.</Typography>
+          <Typography variant="body2">Your voice matters. Your vote matters.</Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
-          <Typography variant="body1" style={{fontWeight:'500'}}>You can make the difference.</Typography>
+          <Typography variant="body2" style={{fontWeight:'500'}}>You can make the difference.</Typography>
         </Grid>
     </React.Fragment>
   );
