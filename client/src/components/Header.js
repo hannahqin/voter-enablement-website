@@ -26,7 +26,7 @@ function Header() {
     <React.Fragment>
         <Grid container className={classes.header} direction="row" justify="flex-start" alignItems="center">
             <Grid item style={{marginTop: "0.8em", marginBottom: "0.4em"}}>
-                <img src={dukeLogo} id="dukeLogo" />
+                <img src={dukeLogo} id="dukeLogo" alt="The Brotherhood Logo" />
             </Grid>
             <Grid item>
               <Grid container direction="column" justify="center" alignItems="flex-start">

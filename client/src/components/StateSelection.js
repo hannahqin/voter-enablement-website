@@ -62,7 +62,6 @@ const StateTextField = withStyles({
 export default function StateSelection(props) {
   const classes = useStyles();
   const [inputValue, setInputValue] = useState("");
-  console.log('props.selectedstate', props.selectedState);
 
   return (
     <React.Fragment>
