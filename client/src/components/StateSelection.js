@@ -6,6 +6,7 @@ import { makeStyles, withTheme, withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import stateInfo from "./StateInfo.json";
 import StateInformation from "./StateInformation";
+import ReactGA from 'react-ga';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,8 +75,11 @@ export default function StateSelection(props) {
           value={props.selectedState}
           onChange={(event, newInputValue) => {
             props.changeState(newInputValue);
-            let str = "#" + newInputValue.state;
-            window.location = str.replace(/\s+/g, '');
+            let stateName = newInputValue.state.replace(/\s+/g, '_');
+            ReactGA.event({
+              category: 'Dropdown',
+              action: stateName
+            });
           }}
           inputValue={inputValue}
           onInputChange={(event, newInputValue) => {
