@@ -11,15 +11,18 @@ function Commercial() {
           <Typography variant="h3">SHARE #THEBROTHERHOODVOTES</Typography>
           <Typography variant="body1">Make sure your friends are in the know</Typography>
         </Grid>
-        <Grid item xs={3} md={2} lg={3}></Grid>
-        <Grid item xs={12} md={8} lg={6} style={{marginTop: "5vh"}}>
-          <ReactPlayer
-            width="100%"  
-            height="50vh"
-            url="https://www.youtube.com/watch?v=QDH56J2_ZmI"
-          />
+        <Grid container justify="center">
+          <Grid item xs={12} md={8} lg={8}>
+            <div className="videoWrapper">
+              <ReactPlayer
+                className="videoPlayer"
+                url="https://www.youtube.com/watch?v=QDH56J2_ZmI"
+                width='100%'
+                height='100%'
+              />
+            </div>
+          </Grid>
         </Grid>
-        <Grid item xs={0} md={4} lg={6}></Grid>
     </React.Fragment>
   );
 }

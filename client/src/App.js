@@ -213,8 +213,7 @@ function App() {
           <Grid container 
             direction="column"
             justify="flex-end"
-            alignItems="center"
-            style={{marginTop: '4em'}}>
+            alignItems="center">
             <SocialMedia  />
           </Grid>
         </Grid>
