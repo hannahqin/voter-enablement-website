@@ -9,7 +9,7 @@ function Commercial() {
     <React.Fragment>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h3">SHARE #THEBROTHERHOODVOTES</Typography>
-          <Typography variant="h6">Make sure your friends are in the know</Typography>
+          <Typography variant="body1">Make sure your friends are in the know</Typography>
         </Grid>
         <Grid item xs={3} md={2} lg={3}></Grid>
         <Grid item xs={12} md={8} lg={6} style={{marginTop: "5vh"}}>

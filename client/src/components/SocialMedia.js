@@ -13,12 +13,12 @@ function SocialMedia() {
     <React.Fragment>
         <Grid container justify="center">
           <Grid item>
-            <IconButton href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thebrotherhoodvotes.us&text=I'm%20ready%20to%20vote.%20Are%20you%3F%20" target="_blank">
+            <IconButton href="https://twitter.com/intent/tweet?url=www.thebrotherhoodvotes.us&text=I'm%20ready%20to%20vote.%20Are%20you%3F%20" target="_blank">
               <TwitterIcon className="sm-icon" />
             </IconButton>
           </Grid>
           <Grid item>
-              <IconButton href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.thebrotherhoodvotes.us" target="_blank">
+              <IconButton href="https://www.facebook.com/sharer/sharer.php?u=www.thebrotherhoodvotes.us" target="_blank">
                 <FacebookIcon className="sm-icon" />
               </IconButton>
           </Grid>
@@ -29,10 +29,10 @@ function SocialMedia() {
           </Grid>
         </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
-          <Typography variant="h6" style={{textAlign:"center"}}>Your voice matters. Your vote matters.</Typography>
+          <Typography variant="body2">Your voice matters. Your vote matters.</Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={12} xl={12} style={{flexBasis: "auto"}}>
-          <Typography variant="h6" style={{textAlign:"center", fontWeight:'500'}}>You can make the difference.</Typography>
+          <Typography variant="body2" style={{fontWeight:'500'}}>You can make the difference.</Typography>
         </Grid>
     </React.Fragment>
   );

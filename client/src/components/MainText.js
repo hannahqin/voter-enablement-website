@@ -19,7 +19,7 @@ export function MainText() {
   return (
     <React.Fragment>
         <Grid item xs={12} md={12} lg={12}>
-          <Typography variant="h6" style={{fontWeight:'400', width:'100%'}}>WE VOTE FOR</Typography>
+          <Typography variant="h4" style={{fontWeight:'400', width:'100%'}}>WE VOTE FOR</Typography>
           <TextLoop interval='2000' noWrap={false} mask={true}>
             <Typography variant="h2" className={classes.root}><strong>CHANGE </strong> <small>vs. </small>STATUS QUO</Typography>
             <Typography variant="h2" className={classes.root}><strong>HOPE </strong> <small>vs. </small>FEAR</Typography>
