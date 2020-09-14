@@ -173,7 +173,6 @@ function App() {
   }, []);
 
   const changeState = (newState) => {
-    console.log('select state', newState);
     setSelState(newState);
   }
    
