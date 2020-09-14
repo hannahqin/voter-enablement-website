@@ -75,11 +75,13 @@ export default function StateSelection(props) {
           value={props.selectedState}
           onChange={(event, newInputValue) => {
             props.changeState(newInputValue);
-            let stateName = newInputValue.state.replace(/\s+/g, '_');
-            ReactGA.event({
-              category: 'Dropdown',
-              action: stateName
-            });
+            if (newInputValue) {
+              let stateName = newInputValue.state.replace(/\s+/g, '_');
+              ReactGA.event({
+                category: 'Dropdown',
+                action: stateName
+              });
+            }
           }}
           inputValue={inputValue}
           onInputChange={(event, newInputValue) => {

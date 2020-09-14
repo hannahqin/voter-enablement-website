@@ -13,7 +13,7 @@ function SocialMedia() {
     <React.Fragment>
         <Grid container justify="center">
           <Grid item>
-            <IconButton href="https://twitter.com/intent/tweet?url=www.thebrotherhoodvotes.us&text=I'm%20ready%20to%20vote.%20Are%20you%3F%20" target="_blank">
+            <IconButton href="https://twitter.com/intent/tweet?url=www.thebrotherhoodvotes.us&text=I'm%20ready%20to%20vote.%20Are%20you%3F%20%23thebrotherhoodvotes" target="_blank">
               <TwitterIcon className="sm-icon" />
             </IconButton>
           </Grid>
